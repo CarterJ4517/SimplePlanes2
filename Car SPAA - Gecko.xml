@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Aircraft name="Car SPAA - Gecko" url="" theme="Custom" paintOrigin="2.759231E-08,3.979141,-5.641901" size="2.395074,2.287374,4.728805" boundsOffset="-9.26082E-07,1.093812,-1.144404" boundsMin="-1.197536,1.75,-2.236903" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.6.0">
+<Aircraft name="Car SPAA - Gecko" url="" theme="Custom" paintOrigin="2.759231E-08,3.979141,-5.641901" size="2.395074,2.287374,4.728805" boundsOffset="-9.26082E-07,1.093812,-1.144404" boundsMin="-1.197536,1.75,-2.236903" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
   <Variables>
     <Setter variable="LaunchCM" function="LaunchCountermeasures" priority="0" />
   </Variables>
@@ -26,7 +26,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="4" partType="JFuselage-1" position="2.759231E-08,2.287498,-1.441903" rotation="0,0,0" drag="0,0,0,0.66887,0,0" dragArea="0,0,0,0.6981285,0,0" name="Underbody" materials="1,0,0,0,1" partCollisionResponse="Default">
+      <Part id="4" partType="JFuselage-1" position="2.759231E-08,2.287498,-1.441903" rotation="0,0,0" drag="0,0,0,0.7405297,0,0" dragArea="0,0,0,0.7697881,0,0" name="Underbody" materials="1,0,0,0,1" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.5" style="Body" glass="false" mass="-1.604549E-08,0.1026942,0,0.06251191" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.5,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.04" edgeCurvature="0,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.2," />
           <SectionB size="1.5,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.04" edgeCurvature="0,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.2," />
@@ -34,7 +34,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="5" partType="JFuselage-1" position="2.759231E-08,2.287498,-1.066903" rotation="0,0,0" drag="0,0.06704,0,0.3754816,0.03146769,0.03183699" dragArea="0,0.1783164,0,0.438794,0.04913433,0.04913433" name="Underbody" materials="1,0,0,0,1" partCollisionResponse="Default">
+      <Part id="5" partType="JFuselage-1" position="2.759231E-08,2.287498,-1.066903" rotation="0,0,0" drag="0,0.06823412,0,0.3754816,0.03146769,0.03183699" dragArea="0,0.1815211,0,0.438794,0.04913433,0.04913433" name="Underbody" materials="1,0,0,0,1" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.25" style="Body" glass="false" mass="5.401834E-09,0.05466862,0.01084909,0.04594148" deadMassKg="0" buoyancy="1" fuelProportion="0">
           <SectionA size="1.5,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.04" edgeCurvature="0,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.2," />
           <SectionB size="2,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.2" edgeCurvature="0.1,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting="0.00,-0.08,,-0.08" />
@@ -59,7 +59,7 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="8" partType="JFuselage-1" position="2.759231E-08,2.287498,1.558097" rotation="0,0,0" drag="0.008029754,0,0,0.7213743,0.0002983924,0.0002983924" dragArea="0.08190467,0,0,0.7663758,0.000341211,0.000341211" name="Underbody" materials="1,0,1,0,1" partCollisionResponse="Default">
-        <JFuselage.State version="2" offset="0,0,0.5" style="Body" glass="false" mass="-1.294778E-08,-0.02632053,-0.05987378,0.09185349" deadMassKg="0" buoyancy="0" fuelProportion="0">
+        <JFuselage.State version="2" offset="0,0,0.5" style="Body" glass="false" mass="-1.294778E-08,-0.02632053,-0.05987378,0.09185349" deadMassKg="140" buoyancy="0" fuelProportion="0">
           <SectionA size="1.5,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.04" edgeCurvature="0,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="1.5,0.5" cornerRadii="0,0,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0.04" edgeCurvature="0,0.02,0,0.02" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.1," />
         </JFuselage.State>
@@ -338,16 +338,16 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="67" partType="JCarEngine-1" position="-5.427171E-08,2.5325,-1.431903" rotation="0,0,180" drag="0,0.0008871201,0,0.04670973,0,0" dragArea="0,0.001068315,0,0.05118159,0,0" centerOfMass="0,0.155,0.1178" materials="1,1,1,1,1,-3" partCollisionResponse="Default">
-        <JEngine.State engineConfiguration="0" cylinderRows="1" engineTuning="-1" size="1" throttleResponse="5" mass="0.675" power="90" rpm="4500" supercharger="false">
+      <Part id="67" partType="JCarEngine-1" position="-5.427171E-08,2.5325,-1.431903" rotation="0,0,180" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" centerOfMass="0,0.13175,0.166005" materials="1,1,1,1,1,-3" partCollisionResponse="Default">
+        <JEngine.State engineConfiguration="0" cylinderRows="2" engineTuning="1" size="0.85" throttleResponse="5" mass="1.192125" power="158.95" rpm="8823.529" supercharger="false">
           <Variables>
             <VariableOutput id="EngineRpm" variable="RPM1" priority="0" activator="" />
           </Variables>
         </JEngine.State>
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Pitch*(1-TurretActive)" zeroOnDeactivate="false" />
       </Part>
-      <Part id="68" partType="JTransmission-1" position="-5.069569E-08,2.32642,-1.505572" rotation="270,0,0" drag="0,0.001293848,0,0.01912654,0,0" dragArea="0,0.002136629,0,0.02047264,0,0" centerOfMass="0,0.155,0.093775" materials="1,1,1,4" partCollisionResponse="Default">
-        <JTransmission.State size="1" gearProfile="Street" gearTuning="-0.25" numGears="3" shiftDownRpm="0.4" shiftUpRpm="0.98" transmissionType="Automatic" shiftDuration="0" postShiftBan="0.5" variableShift="0">
+      <Part id="68" partType="JTransmission-1" position="-5.273721E-08,2.349772,-1.505525" rotation="270,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" centerOfMass="0,0.13175,0.07970875" materials="1,1,1,4" partCollisionResponse="Default">
+        <JTransmission.State size="0.85" gearProfile="Street" gearTuning="-0.25" numGears="3" shiftDownRpm="0.4" shiftUpRpm="0.98" transmissionType="Automatic" shiftDuration="0" postShiftBan="0.5" variableShift="0">
           <Variables />
         </JTransmission.State>
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Yaw" zeroOnDeactivate="false" />
@@ -464,9 +464,9 @@
           <Variables />
         </CameraVantage.State>
       </Part>
-      <Part id="61" partType="Missile-Procedural" position="-0.4014216,3.784779,-0.7665499" rotation="0,0,180" drag="0.00720135,0.01965455,0.002929063,0,0.002835397,0" dragArea="0.03071416,0.03071416,0.02422596,0,0.02388475,0" name="Magnu - AR" materials="6,2,3,5,5,-3" symmetryId="31" partCollisionResponse="Default">
+      <Part id="61" partType="Missile-Procedural" position="-0.4014216,3.784779,-0.7665499" rotation="0,0,180" drag="0.00720135,0.01965455,0.002929063,0,0.002835397,0" dragArea="0.03071416,0.03071416,0.02422596,0,0.02388475,0" name="Magnum - AR" materials="6,2,3,5,5,-3" symmetryId="31" partCollisionResponse="Default">
         <ProceduralMissile.State attachPosition="0.450000048" body="Basic" engine="ThrustVector" seeker="ActiveRadar" radius="1.56250012" size="0.8" burnTime="0.35" seekerFOV="0.12" noseLength="0.23" warheadBias="0" />
-        <Missile.State activationGroup="0" explosionScale="2.89780283" name="Magnu - AR" guidanceActivationDelay="0.199999988" maxRange="32635.1348" minRange="0" maxTargetingAngle="7.4" maxSpeed="1248.84" maxFuelTime="11.15" maxForwardThrustForce="22321.0645" maxHeadingAngleAdjustmentRate="18.27744" maxVelocityAngleAdjustmentRate="9.838471" maxThrustVectoringRate="39.23767" proximityDetonationRangeMin="1" ignitionDelay="0.299999982" seeker="ActiveRadar">
+        <Missile.State activationGroup="0" explosionScale="2.89780283" name="Magnum - AR" guidanceActivationDelay="0.199999988" maxRange="32635.1348" minRange="0" maxTargetingAngle="7.4" maxSpeed="1248.84" maxFuelTime="11.15" maxForwardThrustForce="22321.0645" maxHeadingAngleAdjustmentRate="18.27744" maxVelocityAngleAdjustmentRate="9.838471" maxThrustVectoringRate="39.23767" proximityDetonationRangeMin="1" ignitionDelay="0.299999982" seeker="ActiveRadar">
           <Variables />
         </Missile.State>
         <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false" upOffset="0">
@@ -1164,7 +1164,7 @@
       <Part id="192" partType="TextureDecal-1" position="-0.8155723,3.2282,-1.320234" rotation="270,90.00002,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
         <TextureDecal.State penetration="0.5" position="-0.8655723,3.2282,-1.320234" rotation="0,-0.707107,0,-0.7071067" decalRotation="(0.00, 0.00, 0.00)" size="0.1,0.1,0.1" color="ACACAC" opacity="1" priority="0" target="Multiple Parts" partIds="42" decalId="Decals_Jundroo_JundrooLogo" tiling="1,1" offset="0,0" />
       </Part>
-      <Part id="194" partType="TextureDecal-1" position="1.016985,2.991765,0.4560692" rotation="276.5291,266.5225,0.338754" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="64" partCollisionResponse="Default">
+      <Part id="194" partType="TextureDecal-1" position="1.016985,2.991765,0.4560692" rotation="276.5291,266.5225,0.338709" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="64" partCollisionResponse="Default">
         <TextureDecal.State penetration="0.75" position="1.091387,3.000293,0.460146" rotation="0.03890398,-0.725027,0.04158574,0.6863623" decalRotation="(0.00, 0.00, 0.00)" size="1.4,0.3,0.3" color="685A44" opacity="1" priority="0" target="Multiple Parts" partIds="84,18,33,11,137,141,42" decalId="Decals_Grunge_Rust2" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="195" partType="TextureDecal-1" position="-1.016984,2.991765,0.4560692" rotation="276.5291,93.47712,359.6609" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="64" partCollisionResponse="Default">
