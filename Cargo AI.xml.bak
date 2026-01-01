@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Aircraft name="Cargo AI" url="" theme="Custom" paintOrigin="5.279152,4.929867,-4.38533" size="29.0386,6.234402,46.98001" boundsOffset="1.430511E-06,-0.805542,-0.8103238" boundsMin="-14.5193,1.426564,-23.49001" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
+<Aircraft name="Cargo AI" url="" theme="Custom" paintOrigin="5.279152,4.929867,-4.38533" size="29.0386,6.234402,46.98001" boundsOffset="1.430511E-06,-1.368042,-0.8103238" boundsMin="-14.5193,1.426564,-23.49001" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
   <Variables />
   <Assembly>
     <Parts>
-      <Part id="3" partType="FlightComputer-1" position="1.430511E-06,3.738223,-0.8103276" rotation="0,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" partCollisionResponse="Default">
+      <Part id="3" partType="FlightComputer-1" position="1.430511E-06,3.175723,-0.8103276" rotation="0,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" partCollisionResponse="Default">
         <Cockpit.State primaryCockpit="True">
           <Variables />
         </Cockpit.State>
       </Part>
-      <Part id="1" partType="JFuselage-1" position="1.430511E-06,4.949155,1.509972" rotation="0,0,0" drag="0,0.008628341,36.00865,0.4699071,7.212509,7.237736" dragArea="0,0.4632057,40.34584,1.347121,10.64226,10.70962" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="1" partType="JFuselage-1" position="1.430511E-06,4.949155,1.509972" rotation="0,0,0" drag="0,0.008678799,36.00931,0.4699071,7.211585,7.23734" dragArea="0,0.4632057,40.34584,1.347121,10.64226,10.70962" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,10" style="Hollow" glass="false" mass="-1.270947E-07,0.7259104,0.07210545,38.20918" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="2,2,2.5,2.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.2,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.16," thickness="0.05" />
           <SectionB size="5,5" cornerRadii="1.5,1.5,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.5,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.16," thickness="0.05" />
@@ -16,7 +16,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="2" partType="JFuselage-1" position="2.44379E-06,4.949155,9.00997" rotation="0,0,0" drag="0,0,16.44806,3.017547,6.841265,6.841397" dragArea="0,0,17.78201,7.543882,8.688936,8.688936" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="2" partType="JFuselage-1" position="2.44379E-06,4.949155,9.00997" rotation="0,0,0" drag="0,0,16.44674,3.017151,6.839944,6.839944" dragArea="0,0,17.78201,7.543882,8.688936,8.688936" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,5" style="Hollow" glass="false" mass="-1.304359E-07,0.8286368,0,19.6708" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="1.5,1.5,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.5,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.16," thickness="0.05" />
           <SectionB size="5,5" cornerRadii="1.5,1.5,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.5,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.16," thickness="0.05" />
@@ -24,7 +24,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="385" partType="JFuselage-1" position="2.44379E-06,4.949155,1.509972" rotation="0,0,0" drag="0,0,0,24.46723,0.5458477,0.5458477" dragArea="0,0,0,26.16785,1.145052,1.145052" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="385" partType="JFuselage-1" position="2.44379E-06,4.949155,1.509972" rotation="0,0,0" drag="0,0,0,24.46354,0.5458477,0.5458477" dragArea="0,0,0,26.16785,1.145052,1.145052" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,10" style="Body" glass="false" mass="2.440866E-07,-3.987465,0,4.019211" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.84,,," />
           <SectionB size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.84,,," />
@@ -32,7 +32,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="386" partType="JFuselage-1" position="2.44379E-06,4.949155,9.00997" rotation="0,0,0" drag="0,0,0,16.88493,2.033888,2.033888" dragArea="0,0,0,18.85971,3.77194,3.77194" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="386" partType="JFuselage-1" position="2.44379E-06,4.949155,9.00997" rotation="0,0,0" drag="0,0,0,16.87753,2.033888,2.033888" dragArea="0,0,0,18.85971,3.77194,3.77194" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,5" style="Body" glass="false" mass="2.440866E-07,-3.987465,0,2.009606" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.84,,," />
           <SectionB size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.84,,," />
@@ -40,7 +40,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="387" partType="JFuselage-1" position="2.44379E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.09460904,24.58389,0,9.515972,9.51887" dragArea="0,1.749891,30.91645,0,12.7303,12.7303" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="387" partType="JFuselage-1" position="2.44379E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.09496225,24.58125,0,9.515841,9.518475" dragArea="0,1.749891,30.91645,0,12.7303,12.7303" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.5,7" style="Hollow" glass="false" mass="-1.481575E-07,1.958958,0.4686596,11.90973" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4,4" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.5," thickness="0.12" />
           <SectionB size="5,5" cornerRadii="2,2,2.5,2.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.2,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.5," thickness="0.05" />
@@ -48,7 +48,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="388" partType="JFuselage-1" position="2.44379E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.2821113,0,21.95737,0.7505571,0.6974648" dragArea="0,2.521898,0,23.03579,1.751257,1.751257" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="388" partType="JFuselage-1" position="2.44379E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.282969,0,21.95658,0.750425,0.6973327" dragArea="0,2.521898,0,23.03579,1.751257,1.751257" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.5,7" style="Body" glass="false" mass="5.061853E-08,-4.12956,1.316344,1.388712" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4,4" cornerRadii="4,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.99,0.08,,0.08" />
           <SectionB size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.86,0.137,,0.137" />
@@ -56,7 +56,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="389" partType="JFuselage-1" position="2.44379E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.07371937,11.94895,0,7.703676,7.728769" dragArea="0,0.9521461,15.69397,0,9.901346,9.901346" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="389" partType="JFuselage-1" position="2.44379E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.07382029,11.94776,0,7.70328,7.728241" dragArea="0,0.9521461,15.69397,0,9.901346,9.901346" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.625,6.25" style="Hollow" glass="false" mass="-4.034391E-08,1.402164,0.5679247,5.713101" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.75,2.75" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.5," thickness="0.2" />
           <SectionB size="4,4" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.5," thickness="0.12" />
@@ -64,7 +64,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="390" partType="JFuselage-1" position="2.44379E-06,5.761655,-13.61501" rotation="0,0,-3.201652E-07" drag="0,0.6696797,0,16.33605,0.004886612,0.004886612" dragArea="0,3.396836,0,16.70431,0.235746,0.235746" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="390" partType="JFuselage-1" position="2.44379E-06,5.761655,-13.61501" rotation="0,0,-3.201652E-07" drag="0,0.6696797,0,16.33605,0.005018682,0.005018682" dragArea="0,3.396836,0,16.70431,0.235746,0.235746" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.625,6.25" style="Body" glass="false" mass="3.779813E-08,-3.313324,0.6561062,0.4946263" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.75,2.75" cornerRadii="4,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.96,0.14,,0.14" />
           <SectionB size="4,4" cornerRadii="4,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.96,0.08,,0.08" />
@@ -72,7 +72,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="391" partType="JFuselage-1" position="2.44379E-06,6.511655,-19.86501" rotation="0,0,0" drag="0,1.432608,3.717655,8.780839,8.288482,8.295218" dragArea="0,6.021687,4.580214,10.23813,9.227785,9.227785" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="391" partType="JFuselage-1" position="2.44379E-06,6.511655,-19.86501" rotation="0,0,0" drag="0,1.432659,3.716995,8.780311,8.28835,8.294821" dragArea="0,6.021687,4.580214,10.23813,9.227785,9.227785" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.875,6.25" style="Body" glass="false" mass="-4.268774E-08,-0.3919492,1.543082,3.959076" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.5,1" cornerRadii="2.5,2.25,1,1" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="2.75,2.75" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -96,7 +96,7 @@
         </JWing.State>
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="394" partType="JFuselage-1" position="1.430511E-06,4.949155,14.00998" rotation="0,0,0" drag="0.3149091,0,19.45952,3.164808,17.38987,17.42592" dragArea="4.220311,0,23.84406,6.802965,20.64465,20.64465" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="394" partType="JFuselage-1" position="1.430511E-06,4.949155,14.00998" rotation="0,0,0" drag="0.3154642,0,19.45741,3.164147,17.38868,17.42473" dragArea="4.220311,0,23.84406,6.802965,20.64465,20.64465" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,5" style="Hollow" glass="false" mass="-1.252825E-07,0.5977271,-0.1566538,17.44754" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="1.5,1.5,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.5,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.16," thickness="0.05" />
           <SectionB size="4.625,4.625" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.14," thickness="0.05" />
@@ -104,7 +104,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="395" partType="JFuselage-1" position="2.44379E-06,4.949155,18.13498" rotation="0,0,0" drag="0.3052213,0,10.98404,2.413193,10.15372,10.14857" dragArea="3.165234,0,14.14478,4.714926,12.32617,12.32617" materials="0,4,4,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="395" partType="JFuselage-1" position="2.44379E-06,4.949155,18.13498" rotation="0,0,0" drag="0.3053727,0,10.98259,2.413061,10.1524,10.14712" dragArea="3.165234,0,14.14478,4.714926,12.32617,12.32617" materials="0,4,4,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,3.25" style="Hollow" glass="false" mass="-1.333225E-08,0.2969753,-0.1097542,8.743293" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4.625,4.625" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.14," thickness="0.05" />
           <SectionB size="4,4" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.12," thickness="0.05" />
@@ -112,7 +112,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="397" partType="JFuselage-1" position="2.44379E-06,4.899098,20.51" rotation="0,0,0" drag="0.1209482,0,0.7281052,0,0.02113129,0.02126336" dragArea="0.3088038,0,0.8082719,0,0.101034,0.101034" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="397" partType="JFuselage-1" position="2.44379E-06,4.899098,20.51" rotation="0,0,0" drag="0.1209482,0,0.7279732,0,0.02113129,0.02126336" dragArea="0.3088038,0,0.8082719,0,0.101034,0.101034" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.08,0.5" style="Hollow" glass="false" mass="2.276215E-08,1.8103,-0.02743926,0.2658522" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.875,3.875" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.28,0.5,0.28" thickness="0.05" />
           <SectionB size="3.6,3.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.34,0.5,0.34" thickness="0.05" />
@@ -179,7 +179,7 @@
         <ControlSurfacePart.State style="FowlerFlap" range="0.7,3.75" startPos="-0.3599936,-0.7330304" maxDeflection="30" dummyWingOffset="2.797736,1.606259" dummyWingScale="10.4883,8.995744" />
         <InputController.State activationGroup="0" invert="true" min="0" max="1" input="Flaps" zeroOnDeactivate="false" />
       </Part>
-      <Part id="12" partType="JFuselage-1" position="-13.2693,4.416999,5.298493" rotation="0,0,0" drag="0,0,1.360856,2.120394,2.121845,0" dragArea="0,0,2.05436,2.828955,2.828955,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="12" partType="JFuselage-1" position="-13.2693,4.416999,5.298493" rotation="0,0,0" drag="0,0,1.360856,2.120394,2.121713,0" dragArea="0,0,2.05436,2.828955,2.828955,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-5.820938E-08,5.015266E-08,0,0.9784031" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -187,7 +187,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="14" partType="JFuselage-1" position="-13.26925,4.416999,4.298493" rotation="0,0,0" drag="0,0.09904934,0.9365126,1.681127,1.66475,0" dragArea="0,0.8363444,1.347121,2.189072,2.088038,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="14" partType="JFuselage-1" position="-13.26925,4.416999,4.298493" rotation="0,0,0" drag="0,0.09920073,0.9361164,1.680995,1.664618,0" dragArea="0,0.8363444,1.347121,2.189072,2.088038,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-4.451344E-08,5.462056E-09,0.02616902,0.8845938" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -195,7 +195,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="16" partType="JFuselage-1" position="-13.26925,4.416999,6.198491" rotation="0,0,0" drag="0.06029748,0,1.371289,1.371025,1.371157,0" dragArea="0.6433416,0,1.751257,1.751257,1.751257,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="16" partType="JFuselage-1" position="-13.26925,4.416999,6.198491" rotation="0,0,0" drag="0.06049931,0,1.371025,1.370761,1.370893,0" dragArea="0.6433416,0,1.751257,1.751257,1.751257,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.8" style="Hollow" glass="false" mass="-5.653986E-08,1.663199E-08,-0.01231427,0.7369952" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -203,11 +203,11 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="18" partType="Engine-Jet-Procedural-1" position="-13.26925,4.417043,4.737168" rotation="89.98022,0,0" drag="1.686867,1.008457,0,0.6431838,0.643712,0" dragArea="2.714899,2.097295,0,0.8756279,0.9093059,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="18" partType="Engine-Jet-Procedural-1" position="-13.26925,4.417043,4.737168" rotation="89.98022,0,0" drag="1.686161,1.008406,0,0.6431838,0.643712,0" dragArea="2.714899,2.097295,0,0.8756279,0.9093059,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="0" zeroOnDeactivate="false" />
         <JetEngine.State afterburnerTemp="2000" afterburnerThrottleStart="0.8" bypassRatio="2.5" compressionRatio="6.5" fanPressureRatio="1.5" afterburner="false" reverseThrust="true" size="2.5" turbinePressureRatio="1" fanStyle="SCurve" inletConeStyle="Spiral" nozzleStyle="Civilian" maxGimbalAngle="0" gimbalSpeed="0" mass="55.4939156" />
       </Part>
-      <Part id="30" partType="JFuselage-1" position="-3.057718E-05,4.444101,22.01" rotation="0,0,0" drag="1.051952,0,0.5957705,0.7372181,0.5605077,0.5609038" dragArea="2.058695,0,0.9429839,0.9429839,0.8419499,0.8419499" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="30" partType="JFuselage-1" position="-3.057718E-05,4.444101,22.01" rotation="0,0,0" drag="1.051699,0,0.5956384,0.736954,0.5605077,0.5609038" dragArea="2.058695,0,0.9429839,0.9429839,0.8419499,0.8419499" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.15,0.5" style="Hollow" glass="false" mass="-4.97753E-08,0.00211754,-0.02644833,0.4960315" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.86,2.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.03,,," thickness="0.05" />
           <SectionB size="2.4,2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="-0.3,,," thickness="0.05" />
@@ -215,7 +215,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="36" partType="JFuselage-1" position="1.430511E-06,4.899143,20.51" rotation="0,0,0" drag="0.1280628,0,0.01981059,0.5236599,1.074659,1.07413" dragArea="0.5661405,0,0.134712,0.9429839,1.212408,1.212408" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="36" partType="JFuselage-1" position="1.430511E-06,4.899143,20.51" rotation="0,0,0" drag="0.1281132,0,0.01994266,0.5236599,1.074394,1.073998" dragArea="0.5661405,0,0.134712,0.9429839,1.212408,1.212408" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.08,0.5" style="Hollow" glass="false" mass="-7.579064E-08,-0.7238069,-0.003508629,0.7533668" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.875,3.875" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.34,,0.1," thickness="0.05" />
           <SectionB size="3.6,3.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.3,,0.08," thickness="0.05" />
@@ -223,7 +223,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="37" partType="JFuselage-1" position="1.430511E-06,4.784145,21.01" rotation="0,0,0" drag="0.2518366,0,0.05124339,0.744878,1.094205,1.093941" dragArea="0.8234776,0,0.202068,1.145052,1.347121,1.347121" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="37" partType="JFuselage-1" position="1.430511E-06,4.784145,21.01" rotation="0,0,0" drag="0.2518366,0,0.05124339,0.744746,1.094073,1.093676" dragArea="0.8234776,0,0.202068,1.145052,1.347121,1.347121" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.15,0.5" style="Hollow" glass="false" mass="-6.331781E-08,-0.5546961,-0.004575207,0.7312018" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.6,3.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.3,,0.08," thickness="0.05" />
           <SectionB size="3.25,3.15" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.22,,," thickness="0.05" />
@@ -231,7 +231,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="38" partType="JFuselage-1" position="1.430511E-06,4.61416,21.50999" rotation="0,0,0" drag="0.4949945,0,0.3128752,1.282934,1.007434,1.006906" dragArea="1.235217,0,0.67356,1.683901,1.347121,1.347121" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="38" partType="JFuselage-1" position="1.430511E-06,4.61416,21.50999" rotation="0,0,0" drag="0.494944,0,0.3128752,1.282934,1.00717,1.00651" dragArea="1.235217,0,0.67356,1.683901,1.347121,1.347121" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.19,0.5" style="Hollow" glass="false" mass="-6.347669E-08,-0.2211829,-0.00936511,0.672691" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.25,3.15" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.22,,," thickness="0.05" />
           <SectionB size="2.86,2.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.03,,," thickness="0.05" />
@@ -239,7 +239,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="40" partType="JFuselage-1" position="1.430511E-06,4.319145,22.48499" rotation="0,0,0" drag="0.8712606,0,0.7425009,0.8686283,0.6023739,0.6021098" dragArea="1.595489,0,1.145052,1.145052,0.9766619,0.9766619" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="40" partType="JFuselage-1" position="1.430511E-06,4.319145,22.48499" rotation="0,0,0" drag="0.8712101,0,0.7423688,0.8684962,0.6022419,0.6021098" dragArea="1.595489,0,1.145052,1.145052,0.9766619,0.9766619" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.1,0.45" style="Hollow" glass="false" mass="-3.054092E-08,0.007034387,-0.03165485,0.2685479" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.4,2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
           <SectionB size="1.8,1.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
@@ -247,7 +247,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="41" partType="JFuselage-1" position="1.430511E-06,4.269142,22.88499" rotation="0,0,0" drag="0.7203405,0,0.3139318,0.3178939,0.2389157,0.2387836" dragArea="1.158016,0,0.471492,0.471492,0.404136,0.404136" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="41" partType="JFuselage-1" position="1.430511E-06,4.269142,22.88499" rotation="0,0,0" drag="0.7202396,0,0.3139318,0.3178939,0.2389157,0.2387836" dragArea="1.158016,0,0.471492,0.471492,0.404136,0.404136" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.35" style="Hollow" glass="false" mass="-2.347262E-08,-1.794088E-08,-0.03573491,0.103916" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.8,1.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
           <SectionB size="1.15,1" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
@@ -255,7 +255,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="42" partType="JFuselage-1" position="1.430511E-06,4.269142,23.18501" rotation="0,0,0" drag="0.468302,0,0.08412896,0.08412896,0.06088454,0.06075247" dragArea="0.6690753,0,0.134712,0.134712,0.101034,0.101034" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="42" partType="JFuselage-1" position="1.430511E-06,4.269142,23.18501" rotation="0,0,0" drag="0.4682516,0,0.08412896,0.08412896,0.06088454,0.06075247" dragArea="0.6690753,0,0.134712,0.134712,0.101034,0.101034" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.25" style="Hollow" glass="false" mass="-1.342568E-08,2.995651E-10,-0.03574496,0.02817454" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.15,1" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
           <SectionB size="0.6,0.55" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
@@ -263,7 +263,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="43" partType="JFuselage-1" position="1.430511E-06,4.269142,23.35999" rotation="0,0,0" drag="0.119384,0,0.03407421,0.03407421,0.01848988,0.01848988" dragArea="0.1544019,0,0.067356,0.067356,0.033678,0.033678" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="43" partType="JFuselage-1" position="1.430511E-06,4.269142,23.35999" rotation="0,0,0" drag="0.1193335,0,0.03407421,0.03407421,0.01848988,0.01848988" dragArea="0.1544019,0,0.067356,0.067356,0.033678,0.033678" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Hollow" glass="false" mass="-6.437822E-09,-5.790399E-09,-0.01314373,0.003397349" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.6,0.55" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
           <SectionB size="0.35,0.3" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.05" />
@@ -301,7 +301,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="48" partType="JFuselage-1" position="1.430511E-06,4.949155,14.00998" rotation="0,0,0" drag="0.03027488,0,0,15.32786,1.685617,1.690768" dragArea="0.6690753,0,0,17.04109,3.536194,3.536194" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="48" partType="JFuselage-1" position="1.430511E-06,4.949155,14.00998" rotation="0,0,0" drag="0.03027488,0,0,15.32614,1.685089,1.690503" dragArea="0.6690753,0,0,17.04109,3.536194,3.536194" materials="2,7,7,7,7" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,5" style="Body" glass="false" mass="1.289952E-07,-3.896019,-0.2174507,1.707206" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="5,5" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.84,,," />
           <SectionB size="4.625,4.625" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.86,,," />
@@ -309,7 +309,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="49" partType="JFuselage-1" position="2.801418E-06,4.949137,17.635" rotation="0,0,0" drag="0.01907318,0,0,1.741219,0,0.5405649" dragArea="0.218736,0,0,2.020682,0,1.077696" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="49" partType="JFuselage-1" position="2.801418E-06,4.949137,17.635" rotation="0,0,0" drag="0.01907318,0,0,1.740955,0,0.5404328" dragArea="0.218736,0,0,2.020682,0,1.077696" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,2.25" style="Hollow" glass="false" mass="0.9649431,-3.499868,-0.1092924,0.1173803" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4.625,4.625" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.86,,,0.64" thickness="0.05" />
           <SectionB size="4.192307,4.192307" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.8732,,,0.64" thickness="0.05" />
@@ -333,7 +333,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="52" partType="JFuselage-1" position="1.430511E-06,4.784128,21.01003" rotation="0,0,0" drag="0.0189218,0,0,0.7048607,0.01967852,0.01981059" dragArea="0.1286683,0,0,0.740916,0.067356,0.067356" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="52" partType="JFuselage-1" position="1.430511E-06,4.784128,21.01003" rotation="0,0,0" drag="0.01897226,0,0,0.7048607,0.01967852,0.01981059" dragArea="0.1286683,0,0,0.740916,0.067356,0.067356" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.15,0.5" style="Body" glass="false" mass="-2.516141E-08,-3.060257,-0.1468757,0.01693306" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.6,3.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.92,,," />
           <SectionB size="3.25,3.15" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="1,,," />
@@ -357,7 +357,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="55" partType="JFuselage-1" position="-13.26925,4.416999,6.823491" rotation="0,0,0" drag="0.6586303,0,0,0,0,0" dragArea="0.8878118,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="55" partType="JFuselage-1" position="-13.26925,4.416999,6.823491" rotation="0,0,0" drag="0.6585294,0,0,0,0,0" dragArea="0.8878118,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.05" style="Hollow" glass="false" mass="-3.450867E-08,-3.968066E-08,-0.001183484,0.03460951" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.2,2.2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.12" />
           <SectionB size="2,2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0" />
@@ -365,7 +365,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="56" partType="JFuselage-1" position="-13.26925,4.416999,3.423493" rotation="0,0,0" drag="0,0.729322,0.3044227,1.15258,1.138713,0" dragArea="0,1.621222,0.471492,1.549189,1.481833,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="56" partType="JFuselage-1" position="-13.26925,4.416999,3.423493" rotation="0,0,0" drag="0,0.729322,0.3044227,1.15258,1.138581,0" dragArea="0,1.621222,0.471492,1.549189,1.481833,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.75" style="Hollow" glass="false" mass="-3.420691E-08,-2.771716E-08,0.03623635,0.4966051" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.85,1.85" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
@@ -373,7 +373,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="61" partType="JFuselage-1" position="-7.894247,4.690329,8.423514" rotation="0,0,0" drag="0,0,1.432042,2.158298,2.112205,0" dragArea="0,0,2.088038,2.828955,2.626887,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="61" partType="JFuselage-1" position="-7.894247,4.690329,8.423514" rotation="0,0,0" drag="0,0,1.431778,2.158034,2.111941,0" dragArea="0,0,2.088038,2.828955,2.626887,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-5.820938E-08,5.015266E-08,0,0.9784031" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -381,7 +381,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="62" partType="JFuselage-1" position="-7.894247,4.690329,7.423513" rotation="0,0,0" drag="0,0.1065172,0.8130264,1.672938,1.676108,0" dragArea="0,0.8234776,1.145052,2.155394,2.155394,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="62" partType="JFuselage-1" position="-7.894247,4.690329,7.423513" rotation="0,0,0" drag="0,0.1065676,0.8128944,1.672938,1.675844,0" dragArea="0,0.8234776,1.145052,2.155394,2.155394,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-4.451344E-08,5.462056E-09,0.02616902,0.8845938" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -389,7 +389,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="63" partType="JFuselage-1" position="-7.894247,4.690329,6.548514" rotation="0,0,0" drag="0,0.7022765,0.1988983,1.150335,0.3015172,0" dragArea="0,1.492554,0.33678,1.549189,0.370458,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="63" partType="JFuselage-1" position="-7.894247,4.690329,6.548514" rotation="0,0,0" drag="0,0.7022765,0.1988983,1.150203,0.3015172,0" dragArea="0,1.492554,0.33678,1.549189,0.370458,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.75" style="Hollow" glass="false" mass="-3.420691E-08,-2.771716E-08,0.03623635,0.4966051" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.85,1.85" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
@@ -397,7 +397,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="64" partType="JFuselage-1" position="-7.894247,4.690329,9.323519" rotation="0,0,0" drag="0.04652241,0,1.364157,1.363893,1.36878,0" dragArea="0.4760725,0,1.818613,1.818613,1.784935,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="64" partType="JFuselage-1" position="-7.894247,4.690329,9.323519" rotation="0,0,0" drag="0.04662332,0,1.364157,1.363893,1.368515,0" dragArea="0.4760725,0,1.818613,1.818613,1.784935,0" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.8" style="Hollow" glass="false" mass="-5.653986E-08,1.663199E-08,-0.01231427,0.7369952" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -405,7 +405,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="65" partType="JFuselage-1" position="-7.894247,4.690329,9.773514" rotation="0,0,0" drag="0.06670567,0,0.3079886,0.3079886,0.3065358,0" dragArea="0.2573365,0,0.404136,0.404136,0.404136,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="65" partType="JFuselage-1" position="-7.894247,4.690329,9.773514" rotation="0,0,0" drag="0.06670567,0,0.3079886,0.3078565,0.3065358,0" dragArea="0.2573365,0,0.404136,0.404136,0.404136,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Hollow" glass="false" mass="-3.594281E-08,-5.739851E-08,-0.0005352919,0.08467791" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.3,2.3" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.18" />
@@ -413,7 +413,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="66" partType="JFuselage-1" position="-7.894247,4.690329,9.873514" rotation="0,0,0" drag="0.2029426,0,0,0,0,0" dragArea="0.5018062,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="66" partType="JFuselage-1" position="-7.894247,4.690329,9.873514" rotation="0,0,0" drag="0.2027913,0,0,0,0,0" dragArea="0.5018062,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Hollow" glass="false" mass="-3.948761E-08,3.291417E-09,-0.001105901,0.07934055" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.3,2.3" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.18" />
           <SectionB size="2.2,2.2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.12" />
@@ -421,7 +421,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="67" partType="JFuselage-1" position="-7.894247,4.690329,9.948524" rotation="0,0,0" drag="0.6402636,0,0,0,0,0" dragArea="0.8106107,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="67" partType="JFuselage-1" position="-7.894247,4.690329,9.948524" rotation="0,0,0" drag="0.6403141,0,0,0,0,0" dragArea="0.8106107,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.05" style="Hollow" glass="false" mass="-3.450867E-08,-3.968066E-08,-0.001183484,0.03460951" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.2,2.2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.12" />
           <SectionB size="2,2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0" />
@@ -429,7 +429,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="68" partType="Engine-Jet-Procedural-1" position="-7.894247,4.690369,7.862188" rotation="89.98022,0,0" drag="1.649125,1.062194,0,0.6262787,0,0" dragArea="2.766366,2.161629,0,0.8419499,0,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="68" partType="Engine-Jet-Procedural-1" position="-7.894247,4.690369,7.862188" rotation="89.98022,0,0" drag="1.64867,1.062043,0,0.6262787,0,0" dragArea="2.766366,2.161629,0,0.8419499,0,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="0" zeroOnDeactivate="false" />
         <JetEngine.State afterburnerTemp="2000" afterburnerThrottleStart="0.8" bypassRatio="2.5" compressionRatio="6.5" fanPressureRatio="1.5" afterburner="false" reverseThrust="true" size="2.5" turbinePressureRatio="1" fanStyle="SCurve" inletConeStyle="Spiral" nozzleStyle="Civilian" maxGimbalAngle="0" gimbalSpeed="0" mass="55.4939156" />
       </Part>
@@ -447,7 +447,7 @@
           <Variables />
         </JointRotator.State>
       </Part>
-      <Part id="71" partType="JFuselage-1" position="1.430511E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.2071811,0.007395953,1.514321,9.74231,0" dragArea="0,1.544021,0.16839,2.424818,10.40652,0" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="71" partType="JFuselage-1" position="1.430511E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.2073325,0.007395953,1.514057,9.741913,0" dragArea="0,1.544021,0.16839,2.424818,10.40652,0" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.625,6.25" style="Hollow" glass="false" mass="-1.538735,-1.54622,0.2447034,0.7290168" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.75,2.75" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.86,," thickness="0.2" />
           <SectionB size="4,4" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.92,," thickness="0.12" />
@@ -455,7 +455,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="73" partType="JFuselage-1" position="1.430511E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.03855003,0.004622471,1.228521,10.49417,0" dragArea="0,0.5790073,0.101034,2.492174,11.0464,0" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="73" partType="JFuselage-1" position="1.430511E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.03855003,0.004622471,1.228389,10.49404,0" dragArea="0,0.5790073,0.101034,2.492174,11.0464,0" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.5,7" style="Hollow" glass="false" mass="-1.983068,-1.517558,0.1494748,1.073707" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4,4" cornerRadii="2.25,2.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.92,," thickness="0.12" />
           <SectionB size="5,5" cornerRadii="2,2,2.5,2.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.2,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.50,0.863,," thickness="0.05" />
@@ -463,7 +463,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="72" partType="JFuselage-1" position="1.430511E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.03880232,0.005018682,1.299575,0,10.44398" dragArea="0,0.5790073,0.101034,2.492174,0,11.0464" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="72" partType="JFuselage-1" position="1.430511E-06,5.199155,-6.990022" rotation="0,0,0" drag="0,0.03885277,0.005018682,1.299575,0,10.44267" dragArea="0,0.5790073,0.101034,2.492174,0,11.0464" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.5,7" style="Hollow" glass="false" mass="1.983068,-1.517558,0.1494747,1.073706" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4,4" cornerRadii="2.5,2.25,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.92" thickness="0.12" />
           <SectionB size="5,5" cornerRadii="2,2,2.5,2.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0.2,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.50,,,0.863" thickness="0.05" />
@@ -471,7 +471,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="74" partType="JFuselage-1" position="1.430511E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.2072821,0.00686767,1.514453,0,9.743631" dragArea="0,1.544021,0.16839,2.424818,0,10.40652" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="74" partType="JFuselage-1" position="1.430511E-06,5.761655,-13.61501" rotation="0,0,0" drag="0,0.2073326,0.00686767,1.514321,0,9.743499" dragArea="0,1.544021,0.16839,2.424818,0,10.40652" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.625,6.25" style="Hollow" glass="false" mass="1.538735,-1.546221,0.2447036,0.7290167" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.75,2.75" cornerRadii="2.25,2.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.86" thickness="0.2" />
           <SectionB size="4,4" cornerRadii="2.25,2.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0.2,0,0.2" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.92" thickness="0.12" />
@@ -529,7 +529,7 @@
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="ceil(clamp01(smooth(Activate8,1)-0.9))" />
         <Piston.State preventBreaking="true" cycle="false" extend="true" range="2.5" speed="0.32" />
       </Part>
-      <Part id="85" partType="JFuselage-1" position="2.648059,6.568868,4.613858" rotation="3.000006,90,90" drag="0.1493057,0.03542162,3.38444,0.4498324,0,0.2667826" dragArea="0.3345375,0.2830702,3.536194,0.471492,0,1.111374" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="85" partType="JFuselage-1" position="2.648059,6.568868,4.613858" rotation="3.000006,90,90" drag="0.1493057,0.03542162,3.384308,0.4498324,0,0.2667826" dragArea="0.3345375,0.2830702,3.536194,0.471492,0,1.111374" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.2,0.5" style="Hollow" glass="false" mass="-2.424209E-07,2.272389,-0.01198124,1.022442" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.15,10.35" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0.22,0,0.22" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="1.05,10" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," thickness="0.1" />
@@ -537,7 +537,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="86" partType="JFuselage-1" position="-2.648056,6.568868,4.613858" rotation="3.000006,270,270" drag="0.1491543,0.0371372,3.41442,0.4499645,0.2741785,0" dragArea="0.3345375,0.295937,3.569872,0.471492,1.111374,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="86" partType="JFuselage-1" position="-2.648056,6.568868,4.613858" rotation="3.000006,270,270" drag="0.1491038,0.03718766,3.41442,0.4499645,0.2740465,0" dragArea="0.3345375,0.295937,3.569872,0.471492,1.111374,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.2,0.5" style="Hollow" glass="false" mass="-2.424209E-07,2.272389,-0.01198124,1.022442" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.15,10.35" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0.22,0,0.22" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="1.05,10" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," thickness="0.1" />
@@ -553,7 +553,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="89" partType="JFuselage-1" position="-2.148742,6.595041,4.81386" rotation="3.00001,270,270" drag="0.05767366,0.02179792,4.107264,0,0.1265236,0" dragArea="0.2058692,0.1286683,4.209755,0,0.639882,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="89" partType="JFuselage-1" position="-2.148742,6.595041,4.81386" rotation="3.00001,270,270" drag="0.05767366,0.02179792,4.107132,0,0.1265236,0" dragArea="0.2058692,0.1286683,4.209755,0,0.639882,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.2,0.5" style="Hollow" glass="false" mass="-0.2382381,2.055985,0.08023349,0.5673516" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.25,10.75" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0.22,0,0.22" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.82,," thickness="0.1" />
           <SectionB size="1.15,10.35" cornerRadii="0.5857865,0.5857865,0.5857865,0.5857865" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="1" edgeCurvature="0.3,0.22,0,0.22" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.2,," thickness="0.1" />
@@ -577,7 +577,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="23" partType="JFuselage-1" position="13.2693,4.416999,5.298493" rotation="0,0,0" drag="0,0,1.360856,2.120393,0,2.121978" dragArea="0,0,2.05436,2.828955,0,2.828955" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="23" partType="JFuselage-1" position="13.2693,4.416999,5.298493" rotation="0,0,0" drag="0,0,1.360856,2.120393,0,2.121713" dragArea="0,0,2.05436,2.828955,0,2.828955" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-5.820938E-08,5.015266E-08,0,0.9784031" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -585,7 +585,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="24" partType="JFuselage-1" position="13.26925,4.416999,4.298493" rotation="0,0,0" drag="0,0.0990998,0.9357201,1.681523,0,1.663957" dragArea="0,0.8363444,1.347121,2.189072,0,2.088038" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="24" partType="JFuselage-1" position="13.26925,4.416999,4.298493" rotation="0,0,0" drag="0,0.09920072,0.935588,1.681126,0,1.663825" dragArea="0,0.8363444,1.347121,2.189072,0,2.088038" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-4.451344E-08,5.462056E-09,0.02616902,0.8845938" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -601,7 +601,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="26" partType="JFuselage-1" position="13.26925,4.416999,6.198491" rotation="0,0,0" drag="0.06034794,0,1.371025,1.371289,0,1.371025" dragArea="0.6433416,0,1.751257,1.751257,0,1.751257" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="26" partType="JFuselage-1" position="13.26925,4.416999,6.198491" rotation="0,0,0" drag="0.06049931,0,1.370761,1.371025,0,1.371025" dragArea="0.6433416,0,1.751257,1.751257,0,1.751257" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.8" style="Hollow" glass="false" mass="-5.653986E-08,1.663199E-08,-0.01231427,0.7369952" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -625,7 +625,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="59" partType="JFuselage-1" position="13.26925,4.416999,6.823491" rotation="0,0,0" drag="0.6585798,0,0,0,0,0" dragArea="0.8878118,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="59" partType="JFuselage-1" position="13.26925,4.416999,6.823491" rotation="0,0,0" drag="0.6585294,0,0,0,0,0" dragArea="0.8878118,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.05" style="Hollow" glass="false" mass="-3.450867E-08,-3.968066E-08,-0.001183484,0.03460951" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.2,2.2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.12" />
           <SectionB size="2,2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0" />
@@ -633,11 +633,11 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="60" partType="Engine-Jet-Procedural-1" position="13.26925,4.417043,4.737168" rotation="89.98022,0,0" drag="1.667995,1.00336,0,0.6433158,0,0.6442403" dragArea="2.714899,2.097295,0,0.8756279,0,0.9093059" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="60" partType="Engine-Jet-Procedural-1" position="13.26925,4.417043,4.737168" rotation="89.98022,0,0" drag="1.667541,1.003259,0,0.6433158,0,0.6442403" dragArea="2.714899,2.097295,0,0.8756279,0,0.9093059" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="0" zeroOnDeactivate="false" />
         <JetEngine.State afterburnerTemp="2000" afterburnerThrottleStart="0.8" bypassRatio="2.5" compressionRatio="6.5" fanPressureRatio="1.5" afterburner="false" reverseThrust="true" size="2.5" turbinePressureRatio="1" fanStyle="SCurve" inletConeStyle="Spiral" nozzleStyle="Civilian" maxGimbalAngle="0" gimbalSpeed="0" mass="55.4939156" />
       </Part>
-      <Part id="11" partType="JFuselage-1" position="7.894253,4.690329,8.423514" rotation="0,0,0" drag="0,0,1.432042,2.158299,0,2.112337" dragArea="0,0,2.088038,2.828955,0,2.626887" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="11" partType="JFuselage-1" position="7.894253,4.690329,8.423514" rotation="0,0,0" drag="0,0,1.431778,2.158035,0,2.111941" dragArea="0,0,2.088038,2.828955,0,2.626887" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-5.820938E-08,5.015266E-08,0,0.9784031" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -645,7 +645,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="13" partType="JFuselage-1" position="7.894253,4.690329,7.423513" rotation="0,0,0" drag="0,0.1064667,0.8124982,1.673202,0,1.675976" dragArea="0,0.8234776,1.145052,2.155394,0,2.155394" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="13" partType="JFuselage-1" position="7.894253,4.690329,7.423513" rotation="0,0,0" drag="0,0.1065172,0.8124982,1.67307,0,1.675844" dragArea="0,0.8234776,1.145052,2.155394,0,2.155394" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-4.451344E-08,5.462056E-09,0.02616902,0.8845938" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,2.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.1" />
           <SectionB size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -661,7 +661,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="17" partType="JFuselage-1" position="7.894253,4.690329,9.323519" rotation="0,0,0" drag="0.04652241,0,1.363893,1.364157,0,1.369044" dragArea="0.4760725,0,1.818613,1.818613,0,1.784935" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="17" partType="JFuselage-1" position="7.894253,4.690329,9.323519" rotation="0,0,0" drag="0.04662332,0,1.363893,1.364157,0,1.36878" dragArea="0.4760725,0,1.818613,1.818613,0,1.784935" materials="0,0,0,10,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.8" style="Hollow" glass="false" mass="-5.653986E-08,1.663199E-08,-0.01231427,0.7369952" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
@@ -669,7 +669,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="19" partType="JFuselage-1" position="7.894253,4.690329,9.773514" rotation="0,0,0" drag="0.06670567,0,0.3079886,0.3079886,0,0.3065358" dragArea="0.2573365,0,0.404136,0.404136,0,0.404136" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="19" partType="JFuselage-1" position="7.894253,4.690329,9.773514" rotation="0,0,0" drag="0.06670567,0,0.3078566,0.3079886,0,0.3064038" dragArea="0.2573365,0,0.404136,0.404136,0,0.404136" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Hollow" glass="false" mass="-3.594281E-08,-5.739851E-08,-0.0005352919,0.08467791" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.35,2.35" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.2" />
           <SectionB size="2.3,2.3" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.18" />
@@ -677,7 +677,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="20" partType="JFuselage-1" position="7.894253,4.690329,9.873514" rotation="0,0,0" drag="0.2029931,0,0,0,0,0" dragArea="0.5018062,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="20" partType="JFuselage-1" position="7.894253,4.690329,9.873514" rotation="0,0,0" drag="0.2029426,0,0,0,0,0" dragArea="0.5018062,0,0,0,0,0" materials="3,3,3,3,3" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Hollow" glass="false" mass="-3.948761E-08,3.291417E-09,-0.001105901,0.07934055" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.3,2.3" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.18" />
           <SectionB size="2.2,2.2" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," thickness="0.12" />
@@ -693,7 +693,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="22" partType="Engine-Jet-Procedural-1" position="7.894253,4.690369,7.862188" rotation="89.98022,0,0" drag="1.708211,1.042011,0,0.6261466,0,0" dragArea="2.766366,2.161629,0,0.8419499,0,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="22" partType="Engine-Jet-Procedural-1" position="7.894253,4.690369,7.862188" rotation="89.98022,0,0" drag="1.707808,1.041961,0,0.6260146,0,0" dragArea="2.766366,2.161629,0,0.8419499,0,0" materials="0,4,3,4" symmetryDisabled="true" partCollisionResponse="Default">
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="0" zeroOnDeactivate="false" />
         <JetEngine.State afterburnerTemp="2000" afterburnerThrottleStart="0.8" bypassRatio="2.5" compressionRatio="6.5" fanPressureRatio="1.5" afterburner="false" reverseThrust="true" size="2.5" turbinePressureRatio="1" fanStyle="SCurve" inletConeStyle="Spiral" nozzleStyle="Civilian" maxGimbalAngle="0" gimbalSpeed="0" mass="55.4939156" />
       </Part>
@@ -720,7 +720,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="7" partType="JFuselage-1" position="7.894253,5.666889,8.954766" rotation="0,0,0" drag="0.02411899,0,0.1756539,0,0,0.03935704" dragArea="0.06433413,0,0.202068,0,0,0.067356" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="7" partType="JFuselage-1" position="7.894253,5.666889,8.954766" rotation="0,0,0" drag="0.02411899,0,0.1756539,0,0,0.03922497" dragArea="0.06433413,0,0.202068,0,0,0.067356" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,0.5" style="Body" glass="false" mass="-5.879254E-09,0.005243552,-0.01048708,0.03398218" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.65,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
@@ -728,7 +728,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="119" partType="JFuselage-1" position="7.894253,6.041889,4.704762" rotation="0,0,0" drag="0,0.02770153,0,0.8350825,0,0.134712" dragArea="0,0.2444697,0,0.9429839,0,0.134712" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="119" partType="JFuselage-1" position="7.894253,6.041889,4.704762" rotation="0,0,0" drag="0,0.02770153,0,0.8346863,0,0.134712" dragArea="0,0.2444697,0,0.9429839,0,0.134712" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,3" style="Body" glass="false" mass="-9.792681E-09,-0.02286089,0.2743307,0.3127478" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -736,7 +736,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="122" partType="JFuselage-1" position="-7.894248,5.854389,7.454761" rotation="0,0,0" drag="0.03905461,0,1.096582,0,0.8167245,0" dragArea="0.2316029,0,1.246086,0,0.9093059,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="122" partType="JFuselage-1" position="-7.894248,5.854389,7.454761" rotation="0,0,0" drag="0.03905461,0,1.09645,0,0.8167245,0" dragArea="0.2316029,0,1.246086,0,0.9093059,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.125,2.5" style="Body" glass="false" mass="-9.792682E-09,0.01143045,-0.2286089,0.2600474" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -752,7 +752,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="124" partType="JFuselage-1" position="-7.894248,6.041889,4.704762" rotation="0,0,0" drag="0,0.02770153,0,0.8348184,0.134712,0" dragArea="0,0.2444697,0,0.9429839,0.134712,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="124" partType="JFuselage-1" position="-7.894248,6.041889,4.704762" rotation="0,0,0" drag="0,0.02775198,0,0.8344222,0.134712,0" dragArea="0,0.2444697,0,0.9429839,0.134712,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,3" style="Body" glass="false" mass="-9.792681E-09,-0.02286089,0.2743307,0.3127478" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -760,7 +760,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="125" partType="JFuselage-1" position="13.2693,5.596688,4.321931" rotation="0,0,0" drag="0.03602712,0,1.188503,0,0,0.886854" dragArea="0.2058692,0,1.380799,0,0,0.9766619" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="125" partType="JFuselage-1" position="13.2693,5.596688,4.321931" rotation="0,0,0" drag="0.03602712,0,1.188239,0,0,0.886722" dragArea="0.2058692,0,1.380799,0,0,0.9766619" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.125,2.5" style="Body" glass="false" mass="-9.792682E-09,0.01143045,-0.2286089,0.2600474" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -768,7 +768,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="126" partType="JFuselage-1" position="13.2693,5.409188,5.821931" rotation="0,0,0" drag="0.01821539,0,0.1974455,0,0,0.01598054" dragArea="0.05146731,0,0.235746,0,0,0.033678" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="126" partType="JFuselage-1" position="13.2693,5.409188,5.821931" rotation="0,0,0" drag="0.01821539,0,0.1973135,0,0,0.01598054" dragArea="0.05146731,0,0.235746,0,0,0.033678" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,0.5" style="Body" glass="false" mass="-5.879254E-09,0.005243552,-0.01048708,0.03398218" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.65,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
@@ -776,7 +776,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="127" partType="JFuselage-1" position="13.2693,5.784188,1.821931" rotation="0,0,0" drag="0,0.05000404,0,0.72969,0,0.4812652" dragArea="0,0.3216707,0,0.8419499,0,0.606204" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="127" partType="JFuselage-1" position="13.2693,5.784188,1.821931" rotation="0,0,0" drag="0,0.05010495,0,0.72969,0,0.4812652" dragArea="0,0.3216707,0,0.8419499,0,0.606204" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,2.5" style="Body" glass="false" mass="-1.205912E-08,-0.0276579,0.2765791,0.2472277" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.4" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -784,7 +784,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="128" partType="JFuselage-1" position="-13.2693,5.596688,4.321931" rotation="0,0,0" drag="0.03602712,0,1.188371,0,0.8871181,0" dragArea="0.2058692,0,1.380799,0,0.9766619,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="128" partType="JFuselage-1" position="-13.2693,5.596688,4.321931" rotation="0,0,0" drag="0.03602712,0,1.188107,0,0.886986,0" dragArea="0.2058692,0,1.380799,0,0.9766619,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.125,2.5" style="Body" glass="false" mass="-9.792682E-09,0.01143045,-0.2286089,0.2600474" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -792,7 +792,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="129" partType="JFuselage-1" position="-13.2693,5.409188,5.821931" rotation="0,0,0" drag="0.01816493,0,0.1975776,0,0.01584847,0" dragArea="0.05146731,0,0.235746,0,0.033678,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="129" partType="JFuselage-1" position="-13.2693,5.409188,5.821931" rotation="0,0,0" drag="0.01816493,0,0.1973135,0,0.01584847,0" dragArea="0.05146731,0,0.235746,0,0.033678,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,0.5" style="Body" glass="false" mass="-5.879254E-09,0.005243552,-0.01048708,0.03398218" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.65,0.5" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
@@ -800,7 +800,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="130" partType="JFuselage-1" position="-13.2693,5.784188,1.821931" rotation="0,0,0" drag="0,0.05005449,0,0.7306145,0.4821897,0" dragArea="0,0.3216707,0,0.8419499,0.606204,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="130" partType="JFuselage-1" position="-13.2693,5.784188,1.821931" rotation="0,0,0" drag="0,0.0501554,0,0.7304824,0.4821897,0" dragArea="0,0.3216707,0,0.8419499,0.606204,0" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.25,2.5" style="Body" glass="false" mass="-1.205912E-08,-0.0276579,0.2765791,0.2472277" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.75,0.4" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
           <SectionB size="0.75,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,," />
@@ -824,7 +824,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="134" partType="JFuselage-1" position="2.289102,3.085081,2.556898" rotation="0,0,0" drag="0.07795785,0,0,1.679277,0,2.247709" dragArea="0.5790073,0,0,1.919647,0,2.694243" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="134" partType="JFuselage-1" position="2.289102,3.085081,2.556898" rotation="0,0,0" drag="0.07805876,0,0,1.679145,0,2.247577" dragArea="0.5790073,0,0,1.919647,0,2.694243" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,0.1,2" style="Hollow" glass="false" mass="0.4420614,-0.02430924,-0.08570237,0.4804861" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2,1.5" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
           <SectionB size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
@@ -832,7 +832,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="136" partType="JFuselage-1" position="2.101602,3.235119,4.306903" rotation="0,0,0" drag="0.1779659,0,0,1.038603,0,0.550074" dragArea="0.5404068,0,0,1.279764,0,0.740916" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="136" partType="JFuselage-1" position="2.101602,3.235119,4.306903" rotation="0,0,0" drag="0.1779659,0,0,1.038471,0,0.550074" dragArea="0.5404068,0,0,1.279764,0,0.740916" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.25,0.2,1.5" style="Hollow" glass="false" mass="0.3844026,-0.5008166,-0.1511381,0.1103093" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.5" thickness="0.1" />
           <SectionB size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.5" thickness="0.1" />
@@ -840,7 +840,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="138" partType="JFuselage-1" position="2.289102,3.085081,2.556903" rotation="0,0,0" drag="0.00978888,0,0,1.360195,0,0" dragArea="0.1286683,0,0,1.549189,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="138" partType="JFuselage-1" position="2.289102,3.085081,2.556903" rotation="0,0,0" drag="0.00978888,0,0,1.359931,0,0" dragArea="0.1286683,0,0,1.549189,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,0.1,2" style="Hollow" glass="false" mass="-0.3791409,-0.6729736,-0.07096998,0.1395098" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,1.5" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,," thickness="0.1" />
           <SectionB size="2.25,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,,0.1" thickness="0.1" />
@@ -848,7 +848,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="139" partType="JFuselage-1" position="2.101602,3.235082,4.306903" rotation="0,0,0" drag="0.0439995,0,0,0.8707413,0,0" dragArea="0.1930024,0,0,0.9766619,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="139" partType="JFuselage-1" position="2.101602,3.235082,4.306903" rotation="0,0,0" drag="0.0439995,0,0,0.8706092,0,0" dragArea="0.1930024,0,0,0.9766619,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.25,0.2,1.5" style="Hollow" glass="false" mass="-0.2674401,-0.5560766,-0.1654201,0.06388839" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,,0.1" thickness="0.1" />
           <SectionB size="2,0.75" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,,0.3" thickness="0.1" />
@@ -856,7 +856,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="140" partType="JFuselage-1" position="1.914104,3.43512,5.431903" rotation="0,0,0" drag="0.1662091,0,0,0.1645599,0,0" dragArea="0.295937,0,0,0.235746,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="140" partType="JFuselage-1" position="1.914104,3.43512,5.431903" rotation="0,0,0" drag="0.1660578,0,0,0.1645599,0,0" dragArea="0.295937,0,0,0.235746,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,0.2,0.75" style="Hollow" glass="false" mass="0.2604183,-0.3320572,-0.1865378,0.01633616" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.5" thickness="0.1" />
           <SectionB size="0.25,0.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.5" thickness="0.1" />
@@ -864,7 +864,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="142" partType="JFuselage-1" position="1.914104,3.435081,5.431903" rotation="0,0,0" drag="0.02896298,0,0,0.05903555,0,0" dragArea="0.06433413,0,0,0.067356,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="142" partType="JFuselage-1" position="1.914104,3.435081,5.431903" rotation="0,0,0" drag="0.02891252,0,0,0.05890349,0,0" dragArea="0.06433413,0,0,0.067356,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,0.2,0.75" style="Hollow" glass="false" mass="-0.115401,-0.400999,-0.2005082,0.008150007" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2,0.75" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,,0.3" thickness="0.1" />
           <SectionB size="0.5,0.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,,0.44" thickness="0.1" />
@@ -872,7 +872,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="143" partType="JFuselage-1" position="2.289102,3.085081,-2.443102" rotation="0,0,0" drag="0,0.07805876,0.3910611,1.686145,0,2.246388" dragArea="0,0.5790073,0.67356,1.919647,0,2.660565" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="143" partType="JFuselage-1" position="2.289102,3.085081,-2.443102" rotation="0,0,0" drag="0,0.07805876,0.3907969,1.686013,0,2.246388" dragArea="0,0.5790073,0.67356,1.919647,0,2.660565" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,-0.1,2" style="Hollow" glass="false" mass="0.4420614,-0.02430924,0.08570237,0.4804861" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
           <SectionB size="2,1.5" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
@@ -880,7 +880,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="145" partType="JFuselage-1" position="2.289102,3.085081,-2.443097" rotation="0,0,0" drag="0,0.05065998,0,0.9189473,0,0" dragArea="0,0.295937,0,1.246086,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="145" partType="JFuselage-1" position="2.289102,3.085081,-2.443097" rotation="0,0,0" drag="0,0.05071044,0,0.9189473,0,0" dragArea="0,0.295937,0,1.246086,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,-0.1,2" style="Hollow" glass="false" mass="-0.307069,-0.5322914,0.1355424,0.1260697" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.7,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.4,0.5,," thickness="0.1" />
           <SectionB size="2.5,1.5" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.5,," thickness="0.1" />
@@ -888,7 +888,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="146" partType="JFuselage-1" position="2.101602,3.235082,-4.193103" rotation="0,0,0" drag="0,0.2263553,0.2097281,0.9007214,0,1.04415" dragArea="0,0.7205427,0.370458,1.077696,0,1.313442" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="146" partType="JFuselage-1" position="2.101602,3.235082,-4.193103" rotation="0,0,0" drag="0,0.2263553,0.209596,0.9005893,0,1.043886" dragArea="0,0.7205427,0.370458,1.077696,0,1.313442" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.25,-0.2,1.5" style="Hollow" glass="false" mass="0.3775312,-0.03855087,0.156948,0.2122522" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
           <SectionB size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
@@ -904,7 +904,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="170" partType="JFuselage-1" position="1.914104,3.435083,-5.318103" rotation="0,0,0" drag="0,0.2340249,0.01294292,0.1990304,0,0.2184447" dragArea="0,0.4374721,0.033678,0.269424,0,0.33678" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="170" partType="JFuselage-1" position="1.914104,3.435083,-5.318103" rotation="0,0,0" drag="0,0.2339744,0.01294292,0.1990304,0,0.218841" dragArea="0,0.4374721,0.033678,0.269424,0,0.33678" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,-0.2,0.75" style="Hollow" glass="false" mass="0.2525379,-0.0696153,0.1869138,0.03065882" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.25,0.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
           <SectionB size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,,0.5" thickness="0.1" />
@@ -1010,7 +1010,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="135" partType="JFuselage-1" position="1.273477,2.503832,0.05690342" rotation="0,0,0" drag="0,0,0,2.063339,0,0" dragArea="0,0,0,2.155394,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="135" partType="JFuselage-1" position="1.273477,2.503832,0.05690342" rotation="0,0,0" drag="0,0,0,2.062811,0,0" dragArea="0,0,0,2.155394,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,3" style="Hollow" glass="false" mass="0.02500238,0.3308094,0,0.04988794" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.74,0.18" thickness="0.1" />
           <SectionB size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.74,0.18" thickness="0.1" />
@@ -1034,7 +1034,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="144" partType="JFuselage-1" position="1.348477,2.598832,2.556903" rotation="0,0,0" drag="0.00327978,0,0,0.5244523,0,0" dragArea="0.03860048,0,0,0.538848,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="144" partType="JFuselage-1" position="1.348477,2.598832,2.556903" rotation="0,0,0" drag="0.00327978,0,0,0.5243202,0,0" dragArea="0.03860048,0,0,0.538848,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.15,0.19,2" style="Hollow" glass="false" mass="0.007321016,0.3146839,-0.1645718,0.02520261" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.74,0.18" thickness="0.1" />
           <SectionB size="0.5,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.74,0.18" thickness="0.1" />
@@ -1042,7 +1042,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="152" partType="JFuselage-1" position="3.510764,5.016805,0.05690241" rotation="0,0,0" drag="0,0,0.3044227,0,0,2.947816" dragArea="0,0,0.50517,0,0,3.233092" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="152" partType="JFuselage-1" position="3.510764,5.016805,0.05690241" rotation="0,0,0" drag="0,0,0.3040265,0,0,2.947816" dragArea="0,0,0.50517,0,0,3.233092" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,3" style="Hollow" glass="false" mass="-0.7288305,-1.151663,0,0.4390868" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.7,," thickness="0.1" />
           <SectionB size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.7,," thickness="0.1" />
@@ -1074,7 +1074,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="181" partType="JFuselage-1" position="3.375763,4.876804,-2.443099" rotation="0,0,0" drag="0,0.01089896,0.3643827,0,0,1.988851" dragArea="0,0.1286683,0.67356,0,0,2.189072" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="181" partType="JFuselage-1" position="3.375763,4.876804,-2.443099" rotation="0,0,0" drag="0,0.01089896,0.3642507,0,0,1.988719" dragArea="0,0.1286683,0.67356,0,0,2.189072" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.27,0.28,2" style="Hollow" glass="false" mass="-0.64228,-1.056591,0.1019898,0.2466555" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,2.75" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.7,," thickness="0.1" />
           <SectionB size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.7,," thickness="0.1" />
@@ -1082,7 +1082,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="183" partType="JFuselage-1" position="2.980763,4.421806,-4.193098" rotation="0,0,0" drag="0,0.05368746,0.1137128,0,0,0.9021742" dragArea="0,0.2444697,0.235746,0,0,1.01034" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="183" partType="JFuselage-1" position="2.980763,4.421806,-4.193098" rotation="0,0,0" drag="0,0.05368746,0.1137128,0,0,0.90191" dragArea="0,0.2444697,0.235746,0,0,1.01034" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.52,0.63,1.5" style="Hollow" glass="false" mass="-0.4121218,-0.6831332,0.293815,0.08890108" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1,1.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.82,," thickness="0.1" />
           <SectionB size="1.75,2.75" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.7,," thickness="0.1" />
@@ -1127,7 +1127,7 @@
         </JointRotator.State>
       </Part>
       <Part id="198" partType="SmallRotator-1" position="3.068616,3.114509,0.0706194" rotation="0,180,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" disableAircraftCollisions="true" symmetryDisabled="true" partCollisionResponse="Default">
-        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="ceil(smooth(clamp01(LandingGear) , 0.35) - 0.8)" />
+        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="0" />
         <JointRotator.State range="153" speed="0.5" disableBaseMesh="true">
           <Variables />
         </JointRotator.State>
@@ -1141,12 +1141,12 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="200" partType="SmallRotator-1" position="3.117178,2.686644,-0.1462267" rotation="0,180,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" disableAircraftCollisions="true" symmetryDisabled="true" partCollisionResponse="Default">
-        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="ceil(smooth(clamp01(LandingGear) , 0.35) - 0.8)" />
+        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="0" />
         <JointRotator.State range="117" speed="0.5" disableBaseMesh="true">
           <Variables />
         </JointRotator.State>
       </Part>
-      <Part id="95" partType="JWheel-1" position="3.357178,2.159386,-0.9430737" rotation="0,180,0" drag="0,0.2057683,0.1701069,0.1718238,0,0.4968495" dragArea="0,0.3088038,0.269424,0.269424,0,0.538848" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="95" partType="JWheel-1" position="3.357178,2.159386,-0.9430737" rotation="0,180,0" drag="0,0.2057179,0.1701069,0.1718238,0,0.4968495" dragArea="0,0.3088038,0.269424,0.269424,0,0.538848" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="true" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0.7" tractionForward="1" tractionSideways="0.5">
           <Variables />
         </JWheel.State>
@@ -1167,14 +1167,14 @@
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Brake" zeroOnDeactivate="false" />
       </Part>
-      <Part id="96" partType="JWheel-1" position="2.867178,2.159386,-0.9430737" rotation="0,1.366038E-05,0" drag="0,0.1520304,0,0.2214824,0,0" dragArea="0,0.1930024,0,0.269424,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="96" partType="JWheel-1" position="2.867178,2.159386,-0.9430737" rotation="0,1.366038E-05,0" drag="0,0.15198,0,0.2214824,0,0" dragArea="0,0.1930024,0,0.269424,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="false" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0" tractionForward="1" tractionSideways="0">
           <Variables />
         </JWheel.State>
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Brake" zeroOnDeactivate="false" />
       </Part>
-      <Part id="102" partType="JWheel-1" position="2.867178,2.159386,0.05692041" rotation="0,1.366038E-05,0" drag="0,0,0,0.2406326,0,0" dragArea="0,0,0,0.33678,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="102" partType="JWheel-1" position="2.867178,2.159386,0.05692041" rotation="0,1.366038E-05,0" drag="0,0,0,0.2405006,0,0" dragArea="0,0,0,0.33678,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="false" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0" tractionForward="1" tractionSideways="0">
           <Variables />
         </JWheel.State>
@@ -1226,7 +1226,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="99" partType="JFuselage-1" position="-1.273475,2.503832,0.05690342" rotation="0,0,0" drag="0,0,0,2.063735,0,0" dragArea="0,0,0,2.155394,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="99" partType="JFuselage-1" position="-1.273475,2.503832,0.05690342" rotation="0,0,0" drag="0,0,0,2.063603,0,0" dragArea="0,0,0,2.155394,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,3" style="Hollow" glass="false" mass="-0.02500238,0.3308094,0,0.04988794" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.18,0.74," thickness="0.1" />
           <SectionB size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.18,0.74," thickness="0.1" />
@@ -1250,7 +1250,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="107" partType="JFuselage-1" position="-1.348475,2.598832,2.556903" rotation="0,0,0" drag="0.00327978,0,0,0.5228675,0,0" dragArea="0.03860048,0,0,0.538848,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="107" partType="JFuselage-1" position="-1.348475,2.598832,2.556903" rotation="0,0,0" drag="0.00327978,0,0,0.5227354,0,0" dragArea="0.03860048,0,0,0.538848,0,0" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.15,0.19,2" style="Hollow" glass="false" mass="-0.007321015,0.3146839,-0.1645718,0.02520261" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.18,0.74," thickness="0.1" />
           <SectionB size="0.5,0.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.18,0.74," thickness="0.1" />
@@ -1272,7 +1272,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="110" partType="JFuselage-1" position="-2.289101,3.085081,-2.443097" rotation="0,0,0" drag="0,0.05242601,0,1.025264,0,0" dragArea="0,0.3216707,0,1.380799,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="110" partType="JFuselage-1" position="-2.289101,3.085081,-2.443097" rotation="0,0,0" drag="0,0.05242601,0,1.025,0,0" dragArea="0,0.3216707,0,1.380799,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,-0.1,2" style="Hollow" glass="false" mass="0.307069,-0.5322914,0.1355424,0.1260697" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.7,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.4,,,0.5" thickness="0.1" />
           <SectionB size="2.5,1.5" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,,,0.5" thickness="0.1" />
@@ -1296,7 +1296,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="113" partType="JFuselage-1" position="-2.289101,3.085081,2.556903" rotation="0,0,0" drag="0.009486131,0,0,1.360723,0,0" dragArea="0.1286683,0,0,1.549189,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="113" partType="JFuselage-1" position="-2.289101,3.085081,2.556903" rotation="0,0,0" drag="0.009486131,0,0,1.360591,0,0" dragArea="0.1286683,0,0,1.549189,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,0.1,2" style="Hollow" glass="false" mass="0.3791409,-0.6729738,-0.07096981,0.1395098" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.5,1.5" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,,,0.5" thickness="0.1" />
           <SectionB size="2.25,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.1,,0.5" thickness="0.1" />
@@ -1304,7 +1304,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="114" partType="JFuselage-1" position="-2.101601,3.235082,4.306903" rotation="0,0,0" drag="0.04430225,0,0,0.8717979,0,0" dragArea="0.1930024,0,0,0.9766619,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="114" partType="JFuselage-1" position="-2.101601,3.235082,4.306903" rotation="0,0,0" drag="0.04430225,0,0,0.8715338,0,0" dragArea="0.1930024,0,0,0.9766619,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.25,0.2,1.5" style="Hollow" glass="false" mass="0.2674401,-0.5560766,-0.1654201,0.0638884" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,1.25" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.1,,0.5" thickness="0.1" />
           <SectionB size="2,0.75" cornerRadii="0.7500001,0.7500001,0.7500001,0.7500001" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0.8" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.6,0.3,,0.5" thickness="0.1" />
@@ -1320,7 +1320,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="116" partType="JFuselage-1" position="-2.289101,3.085081,2.556898" rotation="0,0,0" drag="0.07810921,0,0,1.679014,2.247709,0" dragArea="0.5790073,0,0,1.919647,2.694243,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="116" partType="JFuselage-1" position="-2.289101,3.085081,2.556898" rotation="0,0,0" drag="0.07810921,0,0,1.679014,2.247445,0" dragArea="0.5790073,0,0,1.919647,2.694243,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,0.1,2" style="Hollow" glass="false" mass="-0.4420614,-0.02430929,-0.08570237,0.4804862" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2,1.5" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
           <SectionB size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
@@ -1328,7 +1328,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="117" partType="JFuselage-1" position="-2.101601,3.235119,4.306903" rotation="0,0,0" drag="0.1782182,0,0,1.041905,0.5475646,0" dragArea="0.5404068,0,0,1.279764,0.740916,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="117" partType="JFuselage-1" position="-2.101601,3.235119,4.306903" rotation="0,0,0" drag="0.1782182,0,0,1.041773,0.5474326,0" dragArea="0.5404068,0,0,1.279764,0.740916,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.25,0.2,1.5" style="Hollow" glass="false" mass="-0.3844026,-0.5008166,-0.151138,0.1103093" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.5,," thickness="0.1" />
           <SectionB size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.5,," thickness="0.1" />
@@ -1336,7 +1336,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="118" partType="JFuselage-1" position="-1.914101,3.43512,5.431903" rotation="0,0,0" drag="0.1659568,0,0,0.1653524,0,0" dragArea="0.295937,0,0,0.235746,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="118" partType="JFuselage-1" position="-1.914101,3.43512,5.431903" rotation="0,0,0" drag="0.1658055,0,0,0.1653524,0,0" dragArea="0.295937,0,0,0.235746,0,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.125,0.2,0.75" style="Hollow" glass="false" mass="-0.2604184,-0.3320572,-0.1865378,0.01633617" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.5,," thickness="0.1" />
           <SectionB size="0.25,0.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,0.5,," thickness="0.1" />
@@ -1360,7 +1360,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="149" partType="JFuselage-1" position="-2.289101,3.085081,-2.443102" rotation="0,0,0" drag="0,0.07795785,0.390929,1.685882,2.24586,0" dragArea="0,0.5790073,0.67356,1.919647,2.660565,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="149" partType="JFuselage-1" position="-2.289101,3.085081,-2.443102" rotation="0,0,0" drag="0,0.07795785,0.3907969,1.685882,2.24586,0" dragArea="0,0.5790073,0.67356,1.919647,2.660565,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,-0.1,2" style="Hollow" glass="false" mass="-0.4420614,-0.02430929,0.08570237,0.4804862" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
           <SectionB size="2,1.5" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
@@ -1368,7 +1368,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="150" partType="JFuselage-1" position="-2.101601,3.235082,-4.193103" rotation="0,0,0" drag="0,0.2259516,0.2101243,0.8983441,1.046395,0" dragArea="0,0.7205427,0.370458,1.077696,1.313442,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="150" partType="JFuselage-1" position="-2.101601,3.235082,-4.193103" rotation="0,0,0" drag="0,0.2259516,0.2099922,0.898212,1.046263,0" dragArea="0,0.7205427,0.370458,1.077696,1.313442,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.25,-0.2,1.5" style="Hollow" glass="false" mass="-0.3775312,-0.03855096,0.156948,0.2122522" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
           <SectionB size="1.75,1.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
@@ -1376,7 +1376,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="151" partType="JFuselage-1" position="-1.914101,3.435083,-5.318103" rotation="0,0,0" drag="0,0.2328643,0.01360327,0.1971814,0.2191051,0" dragArea="0,0.4374721,0.033678,0.269424,0.33678,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="151" partType="JFuselage-1" position="-1.914101,3.435083,-5.318103" rotation="0,0,0" drag="0,0.232713,0.01360327,0.1971814,0.2197655,0" dragArea="0,0.4374721,0.033678,0.269424,0.33678,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.125,-0.2,0.75" style="Hollow" glass="false" mass="-0.2525379,-0.06961531,0.1869138,0.03065882" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="0.25,0.25" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
           <SectionB size="1.25,0.75" cornerRadii="0.5,0.5,0.5,0.5" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="-0.1" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",0.5,," thickness="0.1" />
@@ -1406,7 +1406,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="161" partType="JFuselage-1" position="-3.51076,5.016805,0.05690241" rotation="0,0,0" drag="0,0,0.3044227,0,2.947816,0" dragArea="0,0,0.50517,0,3.233092,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="161" partType="JFuselage-1" position="-3.51076,5.016805,0.05690241" rotation="0,0,0" drag="0,0,0.3040265,0,2.947816,0" dragArea="0,0,0.50517,0,3.233092,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,3" style="Hollow" glass="false" mass="0.7288304,-1.151663,0,0.4390868" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
           <SectionB size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
@@ -1414,7 +1414,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="162" partType="JFuselage-1" position="-3.38576,4.816805,2.556901" rotation="0,0,0" drag="0.01110079,0,0,0,0.8472329,0" dragArea="0.1286683,0,0,0,0.9429839,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="162" partType="JFuselage-1" position="-3.38576,4.816805,2.556901" rotation="0,0,0" drag="0.01110079,0,0,0,0.8471008,0" dragArea="0.1286683,0,0,0,0.9429839,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0.25,-0.4,2" style="Hollow" glass="false" mass="0.6497431,-1.0096,-0.1182409,0.2418685" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
           <SectionB size="1.8,2.5" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
@@ -1438,7 +1438,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="165" partType="JFuselage-1" position="-3.375761,4.876804,-2.443099" rotation="0,0,0" drag="0,0.01105033,0.3675525,0,1.98753,0" dragArea="0,0.1286683,0.67356,0,2.189072,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="165" partType="JFuselage-1" position="-3.375761,4.876804,-2.443099" rotation="0,0,0" drag="0,0.01105033,0.3675525,0,1.987398,0" dragArea="0,0.1286683,0.67356,0,2.189072,0" materials="0,0,0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="-0.27,0.28,2" style="Hollow" glass="false" mass="0.64228,-1.056591,0.1019898,0.2466555" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="1.75,2.75" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
           <SectionB size="2.25,3.25" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.5,,,0.7" thickness="0.1" />
@@ -1463,7 +1463,7 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="168" partType="SmallRotator-1" position="-3.068614,3.114509,0.0706194" rotation="0,180,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" disableAircraftCollisions="true" symmetryDisabled="true" partCollisionResponse="Default">
-        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="ceil(smooth(clamp01(LandingGear) , 0.35) - 0.8)" />
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
         <JointRotator.State range="153" speed="0.5" disableBaseMesh="true">
           <Variables />
         </JointRotator.State>
@@ -1477,7 +1477,7 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="171" partType="SmallRotator-1" position="-3.117176,2.686644,-0.1462267" rotation="0,180,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" disableAircraftCollisions="true" symmetryDisabled="true" partCollisionResponse="Default">
-        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="ceil(smooth(clamp01(LandingGear) , 0.35) - 0.8)" />
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
         <JointRotator.State range="117" speed="0.5" disableBaseMesh="true">
           <Variables />
         </JointRotator.State>
@@ -1569,21 +1569,21 @@
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Brake" zeroOnDeactivate="false" />
       </Part>
-      <Part id="195" partType="JWheel-1" position="-2.867176,2.159386,0.05692041" rotation="0,180,0" drag="0,0,0,0.2406326,0,0" dragArea="0,0,0,0.33678,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="195" partType="JWheel-1" position="-2.867176,2.159386,0.05692041" rotation="0,180,0" drag="0,0,0,0.2405005,0,0" dragArea="0,0,0,0.33678,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="true" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0" tractionForward="1" tractionSideways="0">
           <Variables />
         </JWheel.State>
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Brake" zeroOnDeactivate="false" />
       </Part>
-      <Part id="196" partType="JWheel-1" position="-3.357176,2.159386,-0.9430737" rotation="0,-1.001791E-05,0" drag="0,0.2057683,0.1701069,0.1718238,0.4968496,0" dragArea="0,0.3088038,0.269424,0.269424,0.538848,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="196" partType="JWheel-1" position="-3.357176,2.159386,-0.9430737" rotation="0,-1.001791E-05,0" drag="0,0.2057179,0.1701069,0.1718238,0.4968496,0" dragArea="0,0.3088038,0.269424,0.269424,0.538848,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="false" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0.7" tractionForward="1" tractionSideways="0.5">
           <Variables />
         </JWheel.State>
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Brake" zeroOnDeactivate="false" />
       </Part>
-      <Part id="197" partType="JWheel-1" position="-2.867176,2.159386,-0.9430737" rotation="0,180,0" drag="0,0.1520304,0,0.2214824,0,0" dragArea="0,0.1930024,0,0.269424,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="197" partType="JWheel-1" position="-2.867176,2.159386,-0.9430737" rotation="0,180,0" drag="0,0.15198,0,0.2214824,0,0" dragArea="0,0.1930024,0,0.269424,0,0" materials="6,4,4,4,4,4,4,4" symmetryDisabled="true" partCollisionResponse="Default">
         <JWheel.State turningAngle="0" turningAngleDampening="0" engineId="0" reversed="true" size="1.75" width="1" tire="TireRacingGrooved" rim="RimSemiRear" rimOffset="0.5" turningRate="150" frictionCircleStrength="0" frictionCirclePower="3" brake="0" tractionForward="1" tractionSideways="0">
           <Variables />
         </JWheel.State>
@@ -1598,7 +1598,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="205" partType="JFuselage-1" position="2.801418E-06,4.949128,19.26003" rotation="0,0,0" drag="0.02739878,0,0,2.601263,0.2733861,0.2739144" dragArea="0.2830702,0,0,2.828955,0.606204,0.606204" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="205" partType="JFuselage-1" position="2.801418E-06,4.949128,19.26003" rotation="0,0,0" drag="0.02744924,0,0,2.601131,0.273254,0.2740465" dragArea="0.2830702,0,0,2.828955,0.606204,0.606204" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Hollow" glass="false" mass="-8.364581E-08,-3.427526,-0.02161125,0.1854483" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4.192307,4.192307" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.8732,,," thickness="0.05" />
           <SectionB size="4,4" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.88,,," thickness="0.05" />
@@ -1626,12 +1626,12 @@
         </JointRotator.State>
       </Part>
       <Part id="208" partType="HingeRotator-1" position="2.801418E-06,3.410064,16.93967" rotation="90,270,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" symmetryDisabled="true" partCollisionResponse="Default">
-        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="ceil(smooth(clamp01(LandingGear) , 0.35))" />
+        <InputController.State activationGroup="0" invert="true" min="-1" max="1" input="0" />
         <JointRotator.State range="100" speed="0.3" disableBaseMesh="true">
           <Variables />
         </JointRotator.State>
       </Part>
-      <Part id="209" partType="JFuselage-1" position="0,4.949155,17.63499" rotation="0,0,0" drag="0.02063738,0,0,1.742143,0.5383197,0" dragArea="0.218736,0,0,2.020682,1.077696,0" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="209" partType="JFuselage-1" position="0,4.949155,17.63499" rotation="0,0,0" drag="0.02063738,0,0,1.741879,0.5383197,0" dragArea="0.218736,0,0,2.020682,1.077696,0" materials="2,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,2.25" style="Hollow" glass="false" mass="-0.9649436,-3.49987,-0.1092922,0.1173803" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4.625,4.625" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.86,0.64,," thickness="0.05" />
           <SectionB size="4.192307,4.192307" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.8732,0.64,," thickness="0.05" />
@@ -1642,7 +1642,7 @@
       <Part id="210" partType="FuelTank-1" position="2.44379E-06,3.003843,8.63497" rotation="0,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,4" scale="1,0.25,1" massScale="0" symmetryDisabled="true" partCollisionResponse="Default">
         <FuelTank.State fuel="100000" capacity="100000" />
       </Part>
-      <Part id="220" partType="JFuselage-1" position="2.801418E-06,4.6141,21.51" rotation="0,0,0" drag="0.08017799,0,0.2614998,0,0.02258407,0.022452" dragArea="0.1286683,0,0.33678,0,0.067356,0.067356" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="220" partType="JFuselage-1" position="2.801418E-06,4.6141,21.51" rotation="0,0,0" drag="0.08007708,0,0.2614998,0,0.02258407,0.022452" dragArea="0.1286683,0,0.33678,0,0.067356,0.067356" materials="2,2,2,2,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.19,0.5" style="Hollow" glass="false" mass="-1.505827E-08,1.964525,-0.06120096,0.01508327" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.25,3.15" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.2,,0.78," thickness="0.05" />
           <SectionB size="2.86,2.6" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.97," thickness="0.05" />
@@ -1650,7 +1650,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="31" partType="JFuselage-1" position="2.801418E-06,4.944145,20.00999" rotation="0,0,0" drag="0.03168771,0,0.02179165,0.3111583,0.7011628,0.7008986" dragArea="0.2573365,0,0.134712,0.606204,0.7745939,0.7745939" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="31" partType="JFuselage-1" position="2.801418E-06,4.944145,20.00999" rotation="0,0,0" drag="0.03168771,0,0.02179165,0.3110262,0.7010307,0.7008986" dragArea="0.2573365,0,0.134712,0.606204,0.7745939,0.7745939" materials="0,0,0,1,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.01,0.5" style="Hollow" glass="false" mass="-1.461492E-07,-0.8016227,-0.001228521,0.7723506" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="4,4" cornerRadii="4,4,4,4" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.35,,0.12," thickness="0.05" />
           <SectionB size="3.875,3.875" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.34,,0.1," thickness="0.05" />
@@ -1810,7 +1810,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="223" partType="JFuselage-1" position="2.801418E-06,4.9441,20.01" rotation="0,0,0" drag="0.01877043,0,0.3361197,0,0.2599149,0.2597829" dragArea="0.1029346,0,0.538848,0,0.33678,0.33678" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="223" partType="JFuselage-1" position="2.801418E-06,4.9441,20.01" rotation="0,0,0" drag="0.01877043,0,0.3361197,0,0.2599149,0.2596508" dragArea="0.1029346,0,0.538848,0,0.33678,0.33678" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.01,0.5" style="Hollow" glass="true" mass="-6.917563E-08,2.165399,0.002506561,0.3165419" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.98,3.98" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.1,,0.66," thickness="0.04" />
           <SectionB size="3.855,3.855" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.06,,0.66," thickness="0.04" />
@@ -1818,7 +1818,7 @@
         <Transparency.State opacity="0.4" hideFront="true" hideBack="false" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="224" partType="JFuselage-1" position="2.801418E-06,4.899101,20.51" rotation="0,0,0" drag="0.1586404,0,0.5433384,0,0.3046868,0.2856687" dragArea="0.4374721,0,0.8082719,0,0.437814,0.404136" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="224" partType="JFuselage-1" position="2.801418E-06,4.899101,20.51" rotation="0,0,0" drag="0.1586404,0,0.5432063,0,0.3046868,0.2856687" dragArea="0.4374721,0,0.8082719,0,0.437814,0.404136" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.08,0.5" style="Hollow" glass="true" mass="-4.148544E-08,2.220304,-0.01684391,0.2874267" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.855,3.855" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.06,,0.66," thickness="0.04" />
           <SectionB size="3.58,3.58" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.03,,0.7," thickness="0.04" />
@@ -1826,7 +1826,7 @@
         <Transparency.State opacity="0.4" hideFront="true" hideBack="true" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="225" partType="JFuselage-1" position="2.801418E-06,4.7841,21.01" rotation="0,0,0" drag="0.2833225,0,0.5047738,0,0.1845026,0.1841064" dragArea="0.5404068,0,0.7745939,0,0.303102,0.303102" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="225" partType="JFuselage-1" position="2.801418E-06,4.7841,21.01" rotation="0,0,0" drag="0.2833225,0,0.5047738,0,0.1846347,0.1842385" dragArea="0.5404068,0,0.7745939,0,0.303102,0.303102" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.15,0.5" style="Hollow" glass="true" mass="1.437383E-08,2.27585,-0.03893275,0.1949124" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.58,3.58" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting="0.03,,0.7," thickness="0.04" />
           <SectionB size="3.23,3.13" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.78," thickness="0.04" />
@@ -1834,7 +1834,7 @@
         <Transparency.State opacity="0.4" hideFront="true" hideBack="true" overrideHide="false" hideInside="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="226" partType="JFuselage-1" position="2.801418E-06,4.6141,21.51" rotation="0,0,0" drag="0.498022,0,0.4749258,0,0.0323573,0.03209315" dragArea="0.7720101,0,0.67356,0,0.101034,0.101034" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="226" partType="JFuselage-1" position="2.801418E-06,4.6141,21.51" rotation="0,0,0" drag="0.4978201,0,0.4749258,0,0.0323573,0.03209315" dragArea="0.7720101,0,0.67356,0,0.101034,0.101034" materials="15,15,15,16,2" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,-0.19,0.5" style="Hollow" glass="true" mass="-2.580241E-08,2.098081,-0.01973342,0.1193623" deadMassKg="0" buoyancy="0" fuelProportion="0">
           <SectionA size="3.23,3.13" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.78," thickness="0.04" />
           <SectionB size="2.84,2.58" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,0.78," thickness="0.04" />
