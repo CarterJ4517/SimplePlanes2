@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Aircraft name="Heli Cargo - Oxlift" url="" theme="Custom" paintOrigin="0.08541393,3.854029,5.648278" size="20.35704,8.349522,27.6752" boundsOffset="0.07110977,-0.1015763,2.321526" boundsMin="-10.16422,1.724999,-13.81088" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
+<Aircraft name="Heli Cargo - Oxlift" url="" theme="Custom" paintOrigin="0.08541393,3.854029,5.648278" size="20.35704,8.349522,27.6752" boundsOffset="0.07110882,-0.1015763,2.321527" boundsMin="-10.16422,1.724999,-13.81088" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
   <Variables />
   <Assembly>
     <Parts>
@@ -1468,13 +1468,13 @@
         <Winch.State startRange="0" range="0.5" volume="1" speed="1" />
       </Part>
       <Part id="252" partType="Magnet-1" position="0.08540004,4.827301,2.275798" rotation="0,0,180" drag="0,0.0507927,0,0.1850202,0.05617204,0.05322177" dragArea="0,0.06671392,0,0.1936665,0.08938453,0.08938453" materials="4,1,10" symmetryDisabled="true" partCollisionResponse="Default">
-        <Magnet.State activationGroup="2" power="200" />
+        <Magnet.State activationGroup="2" power="2.5" />
       </Part>
       <Part id="255" partType="TextDecal-1" position="-1.004073,5.294875,6.125457" rotation="270,90.16854,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
         <TextDecal.State penetration="0.05" position="-1.099073,5.294875,6.125736" rotation="0,-0.708146,0,-0.7060663" decalRotation="(0.00, 0.00, 0.00)" size="2.6,1,0.1" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="74,75,76,2,114" text="N42069" font="Military" fontSize="4" alignV="Center" alignH="Center" />
       </Part>
       <Part id="256" partType="TextDecal-1" position="0.7210593,5.553461,-4.01497" rotation="270,274.0856,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
-        <TextDecal.State penetration="0.3" position="1.000348,5.553461,-4.034919" rotation="-0.005946666,-0.6814258,0.006386578,0.7318352" decalRotation="(0.00, 0.00, 1.00)" size="6.7,0.9,0.4" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="303,7,5,6" text="&lt;b&gt;EXO AIR CRANE" font="Military" fontSize="7" alignV="Center" alignH="Center" />
+        <TextDecal.State penetration="0.3" position="1.000348,5.553461,-4.034919" rotation="-0.005946666,-0.6814258,0.006386578,0.7318352" decalRotation="(0.00, 0.00, 1.00)" size="6.7,0.9,0.4" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="6,7,5,303" text="&lt;b&gt;EXO AIR CRANE" font="Military" fontSize="7" alignV="Center" alignH="Center" />
       </Part>
       <Part id="257" partType="FlightComputer-1" position="0.08541393,5.798184,2.34825" rotation="0,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
         <Cockpit.State primaryCockpit="True">
@@ -1504,10 +1504,10 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="261" partType="TextDecal-1" position="-0.550263,5.553461,-4.01497" rotation="270,85.91438,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
-        <TextDecal.State penetration="0.3" position="-0.8295515,5.553461,-4.034919" rotation="0.005946726,-0.6814258,0.006386633,-0.7318352" decalRotation="(0.00, 0.00, -1.00)" size="6.7,0.9,0.4" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="7,5,6" text="&lt;b&gt;EXO AIR CRANE" font="Military" fontSize="7" alignV="Center" alignH="Center" />
+        <TextDecal.State penetration="0.3" position="-0.8295515,5.553461,-4.034919" rotation="0.005946726,-0.6814258,0.006386633,-0.7318352" decalRotation="(0.00, 0.00, -1.00)" size="6.7,0.9,0.4" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="6,7,5" text="&lt;b&gt;EXO AIR CRANE" font="Military" fontSize="7" alignV="Center" alignH="Center" />
       </Part>
       <Part id="262" partType="TextDecal-1" position="1.17487,5.294875,6.125457" rotation="270,269.8315,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
-        <TextDecal.State penetration="0.05" position="1.26987,5.294875,6.125736" rotation="0,-0.7081457,0,0.7060664" decalRotation="(0.00, 0.00, 0.00)" size="2.6,1,0.1" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="75,85,101,2,74,308,307,310,306,114" text="N42069" font="Military" fontSize="4" alignV="Center" alignH="Center" />
+        <TextDecal.State penetration="0.05" position="1.26987,5.294875,6.125736" rotation="0,-0.7081457,0,0.7060664" decalRotation="(0.00, 0.00, 0.00)" size="2.6,1,0.1" color="BEBEBE" opacity="1" priority="0" target="Multiple Parts" partIds="306,2,114,308,307,310,75,74,101,85" text="N42069" font="Military" fontSize="4" alignV="Center" alignH="Center" />
       </Part>
       <Part id="263" partType="JFuselage-1" position="0.08542861,6.462219,2.24825" rotation="90,0,0" drag="0.3404821,0.6775153,1.035372,0,1.047319,1.047319" dragArea="0.3602575,0.6775153,1.035372,0,1.072615,1.072615" name="Gearbox Housing" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,1" style="Body" glass="false" mass="-2.472145E-08,-0.1492361,0,0.4805523" deadMassKg="0" buoyancy="0" fuelProportion="0">
@@ -1566,10 +1566,10 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="270" partType="TextureDecal-1" position="1.172949,3.537038,8.378859" rotation="270,270,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="18" dragType="None" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.72" position="1.228949,3.537038,8.378859" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="1.4,1,0.2" color="525252" opacity="1" priority="0" target="Multiple Parts" partIds="242,121,8,9,13,15,14,43,39,45,134" decalId="Decals_Patterns_Hatch1" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.72" position="1.228949,3.537038,8.378859" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="1.4,1,0.2" color="525252" opacity="1" priority="0" target="Multiple Parts" partIds="8,9,13,39,121,43,45,242,14,15,134" decalId="Decals_Patterns_Hatch1" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="271" partType="TextureDecal-1" position="-1.002151,3.537038,8.378859" rotation="270,90,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="18" dragType="None" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.72" position="-1.058151,3.537038,8.378859" rotation="0,-0.7071068,0,-0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="1.4,1,0.2" color="525252" opacity="1" priority="0" target="Multiple Parts" partIds="240,67,140,121,14,13,15,43,39,45,124,9,62,65,64" decalId="Decals_Patterns_Hatch1" tiling="-1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.72" position="-1.058151,3.537038,8.378859" rotation="0,-0.7071068,0,-0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="1.4,1,0.2" color="525252" opacity="1" priority="0" target="Multiple Parts" partIds="9,62,64,65,67,13,39,43,45,240,121,140,14,15,124" decalId="Decals_Patterns_Hatch1" tiling="-1,1" offset="0,0" />
       </Part>
       <Part id="272" partType="BeaconLight" position="3.266589,4.348601,0.8483148" rotation="0,0,270" drag="0.003380754,0.003377847,0,0,0,0.01489742" dragArea="0.006671392,0.006671392,0,0,0,0.01489742" name="Navigation Light" materials="9,10" symmetryDisabled="true" partCollisionResponse="Default">
         <BeaconLight.State activationGroup="3" designerBlinkProgram="Steady" input="None" intensity="5" />
@@ -1776,7 +1776,7 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="302" partType="TextureDecal-1" position="0.89121,6.3792,-0.9767241" rotation="270,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.25" position="0.89121,6.3792,-1.051724" rotation="0,0,0,-1" decalRotation="(0.00, 0.00, 0.00)" size="0.4,0.4,0.1" color="000000" opacity="1" priority="0" target="Multiple Parts" partIds="299,303" decalId="Decals_Patterns_Window" tiling="26,13" offset="0,0" />
+        <TextureDecal.State penetration="0.25" position="0.89121,6.3792,-1.051724" rotation="0,0,0,-1" decalRotation="(0.00, 0.00, 0.00)" size="0.4,0.4,0.1" color="000000" opacity="1" priority="0" target="Multiple Parts" partIds="303,299" decalId="Decals_Patterns_Window" tiling="26,13" offset="0,0" />
       </Part>
       <Part id="303" partType="JFuselage-1" position="0.8978894,6.117244,-0.901686" rotation="0,0,0" drag="0.004447595,0.01334278,0,0,0,0" dragArea="0.004447595,0.01334278,0,0,0,0" materials="10,10,10" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.1" style="Body" glass="false" mass="-2.582408E-09,-2.984191E-09,0,0.001296618" deadMassKg="0" buoyancy="0" fuelProportion="0">
@@ -1795,7 +1795,7 @@
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
       <Part id="305" partType="TextDecal-1" position="0.08538951,4.70129,9.889837" rotation="305,180,1.498801" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" dragType="None" partCollisionResponse="Default">
-        <TextDecal.State penetration="0.41" position="0.08847593,4.768949,9.986465" rotation="-0.003932958,-0.9536355,0.30068,0.01247383" decalRotation="(0.00, 0.00, 0.00)" size="1,0.3,0.2" color="013500" opacity="1" priority="0" target="Multiple Parts" partIds="28,26,27,25" text="&quot;betty&quot;" font="Stencil" fontSize="1.8" alignV="Center" alignH="Center" />
+        <TextDecal.State penetration="0.41" position="0.08847593,4.768949,9.986465" rotation="-0.003932958,-0.9536355,0.30068,0.01247383" decalRotation="(0.00, 0.00, 0.00)" size="1,0.3,0.2" color="013500" opacity="1" priority="0" target="Multiple Parts" partIds="25,26,27,28" text="&quot;betty&quot;" font="Stencil" fontSize="1.8" alignV="Center" alignH="Center" />
       </Part>
       <Part id="306" partType="JFuselage-1" position="-0.2096105,5.524719,4.098295" rotation="90,0,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="5,5,5,5,5" symmetryDisabled="true" partCollisionResponse="Default">
         <JFuselage.State version="2" offset="0,0,0.05" style="Hollow" glass="false" mass="1.439494,-4.870033E-08,0,0.003862955" deadMassKg="0" buoyancy="0" fuelProportion="0">
@@ -1837,7 +1837,7 @@
         <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
         <FuelTank.State fuel="0" capacity="0" />
       </Part>
-      <Part id="311" partType="HeliRotor-2" position="0.08541622,6.087201,2.348226" rotation="273.5338,315.1082,45.12549" drag="0.3844354,0.2302138,0.4918193,0,0.5028609,0.5018386" dragArea="0.6196983,0.375083,0.5735508,0,0.7672179,0.7672179" name="Main Rotor" centerOfMass="0,-8.6,0" materials="4,10,12,8,-3" symmetryDisabled="true" partCollisionResponse="Default">
+      <Part id="311" partType="HeliRotor-2" position="0.08541622,6.087201,2.348226" rotation="273.5338,315.1082,45.12551" drag="0.3844325,0.2302138,0.4918193,0,0.5028609,0.5018386" dragArea="0.6196983,0.375083,0.5735508,0,0.7672179,0.7672179" name="Main Rotor" centerOfMass="0,-8.6,0" materials="4,10,12,8,-3" symmetryDisabled="true" partCollisionResponse="Default">
         <InputController.State activationGroup="0" invert="false" min="0" max="1" input="Activate8" zeroOnDeactivate="false" />
         <InputController.State activationGroup="0" invert="false" min="0" max="0.5" input="Throttle" />
         <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Roll" />
@@ -1968,25 +1968,25 @@
         </PropEngineAdvanced.State>
       </Part>
       <Part id="42" partType="TextureDecal-1" position="0,5.087247,0.3894641" rotation="0,0,180" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.01" position="0,4.889247,0.3894641" rotation="0,0.7071069,0.7071069,-1.155422E-08" decalRotation="(0.00, 0.00, 0.00)" size="3,15,0.2" color="CA5F1F" opacity="1" priority="0" target="Multiple Parts" partIds="7,250,5,6,74,60,8,208,206,114" decalId="Decals_Grunge_Rust1" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.01" position="0,4.889247,0.3894641" rotation="0,0.7071069,0.7071069,-1.155422E-08" decalRotation="(0.00, 0.00, 0.00)" size="3,15,0.2" color="CA5F1F" opacity="1" priority="0" target="Multiple Parts" partIds="6,7,74,8,5,208,250,206,114,60" decalId="Decals_Grunge_Rust1" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="44" partType="TextureDecal-1" position="1.097889,3.02591,7.148736" rotation="270,270.0983,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0" position="1.197889,3.02591,7.148564" rotation="0,-0.7065002,0,0.7077131" decalRotation="(0.00, 0.00, 0.00)" size="0.65,1,0.1" color="565656" opacity="1" priority="0" target="Multiple Parts" partIds="107,115,85,77,101,90,89,87,137,88,121,8" decalId="Decals_Grunge_Rust2" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0" position="1.197889,3.02591,7.148564" rotation="0,-0.7065002,0,0.7077131" decalRotation="(0.00, 0.00, 0.00)" size="0.65,1,0.1" color="565656" opacity="1" priority="0" target="Multiple Parts" partIds="107,77,87,8,101,85,88,89,90,115,121,137" decalId="Decals_Grunge_Rust2" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="46" partType="TextureDecal-1" position="0,5.871161,4.681665" rotation="0,0,0.01130239" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.03" position="-3.826921E-05,6.065162,4.681665" rotation="0.7071068,6.974335E-05,6.974335E-05,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="2.3,2.5,0.2" color="625858" opacity="1" priority="0" target="Multiple Parts" partIds="292,290,114,287,282" decalId="Decals_Grunge_Rust1" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.03" position="-3.826921E-05,6.065162,4.681665" rotation="0.7071068,6.974335E-05,6.974335E-05,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="2.3,2.5,0.2" color="625858" opacity="1" priority="0" target="Multiple Parts" partIds="287,114,282,290,292" decalId="Decals_Grunge_Rust1" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="48" partType="TextDecal-1" position="1.1729,3.698893,7.519814" rotation="270,270,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
-        <TextDecal.State penetration="0.05" position="1.2679,3.698893,7.519814" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="0.2,0.2,0.1" color="FFFFFF" opacity="1" priority="0" target="Multiple Parts" partIds="101,8" text="&lt;size=40%&gt;&lt;b&gt;&lt;cspace=-0.03&gt;D.O.T APPROVED&lt;br&gt;&lt;size=10%&gt;By the Grace of God&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;line-height=0.15&gt;&lt;cspace=-0.03&gt;&lt;br&gt;EXOSUIT AIR CRANE&#x9;&#x9;&#x9;&lt;br&gt;OXLIFT HEAVY LIFT HELICOPTER&#x9;&lt;br&gt;Cochran, CH&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;line-height=0.15&gt;&lt;cspace=-0.03&gt;&lt;br&gt;REG: N42069&#x9;&#x9;&#x9;&#x9;&lt;br&gt;MAX EXT LOAD: 10,000 KG&#x9;&#x9;&lt;br&gt;OPS: FAR PART 133&#x9;&#x9;&#x9;&#x9;&lt;br&gt;AUTH: MIL/CIV&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;cspace=-0.035&gt;&lt;size=20%&gt;CERT: IDA56709&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;br&gt;EXP: 16 APRIL 35" font="Stencil" fontSize="0.5" alignV="Center" alignH="Center" />
+        <TextDecal.State penetration="0.05" position="1.2679,3.698893,7.519814" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="0.2,0.2,0.1" color="FFFFFF" opacity="1" priority="0" target="Multiple Parts" partIds="8,101" text="&lt;size=40%&gt;&lt;b&gt;&lt;cspace=-0.03&gt;D.O.T APPROVED&lt;br&gt;&lt;size=10%&gt;By the Grace of God&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;line-height=0.15&gt;&lt;cspace=-0.03&gt;&lt;br&gt;EXOSUIT AIR CRANE&#x9;&#x9;&#x9;&lt;br&gt;OXLIFT HEAVY LIFT HELICOPTER&#x9;&lt;br&gt;Cochran, CH&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;line-height=0.15&gt;&lt;cspace=-0.03&gt;&lt;br&gt;REG: N42069&#x9;&#x9;&#x9;&#x9;&lt;br&gt;MAX EXT LOAD: 10,000 KG&#x9;&#x9;&lt;br&gt;OPS: FAR PART 133&#x9;&#x9;&#x9;&#x9;&lt;br&gt;AUTH: MIL/CIV&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;cspace=-0.035&gt;&lt;size=20%&gt;CERT: IDA56709&#x9;&#x9;&#x9;&#x9;&lt;br&gt;&lt;size=20%&gt;&lt;cspace=-0.04&gt;&lt;cspace=-0.044&gt;════════════════════════════════&lt;br&gt;EXP: 16 APRIL 35" font="Stencil" fontSize="0.5" alignV="Center" alignH="Center" />
       </Part>
       <Part id="50" partType="TextureDecal-1" position="1.1854,5.476301,-0.164979" rotation="270,270,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="21" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.97" position="1.2094,5.476301,-0.164979" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="7,0.8,0.8" color="C66B38" opacity="1" priority="0" target="Multiple Parts" partIds="7,250,5,6,74,2,208,309,306,307,308,310,290,114,282" decalId="Decals_Grunge_Rust3" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.97" position="1.2094,5.476301,-0.164979" rotation="0,-0.7071068,0,0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="7,0.8,0.8" color="C66B38" opacity="1" priority="0" target="Multiple Parts" partIds="6,7,2,306,307,308,5,208,250,74,114,309,282,290,310" decalId="Decals_Grunge_Rust3" tiling="1,1" offset="0,0" />
       </Part>
       <Part id="52" partType="TextureDecal-1" position="-1.014573,5.476301,-0.164979" rotation="270,90,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryId="21" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.97" position="-1.038573,5.476301,-0.164979" rotation="0,-0.7071068,0,-0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="7,0.8,0.8" color="C66B38" opacity="1" priority="0" target="Multiple Parts" partIds="7,250,5,6,74,2,206,290,114,409,287,410" decalId="Decals_Grunge_Rust3" tiling="-1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.97" position="-1.038573,5.476301,-0.164979" rotation="0,-0.7071068,0,-0.7071068" decalRotation="(0.00, 0.00, 0.00)" size="7,0.8,0.8" color="C66B38" opacity="1" priority="0" target="Multiple Parts" partIds="6,7,74,2,5,250,206,287,409,114,410,290" decalId="Decals_Grunge_Rust3" tiling="-1,1" offset="0,0" />
       </Part>
       <Part id="54" partType="TextureDecal-1" position="0.146904,2.938855,8.236418" rotation="0,0,181.1272" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,1,2,3" symmetryDisabled="true" partCollisionResponse="Default">
-        <TextureDecal.State penetration="0.93" position="0.1473171,2.917859,8.236418" rotation="-0.006955206,0.7070726,0.7070726,-0.006955206" decalRotation="(0.00, 0.00, 0.00)" size="2.8,3.4,0.3" color="523E35" opacity="1" priority="0" target="Multiple Parts" partIds="242,240,81,80,79,91,90,89,93,137,92,88,82,83,84,121,8,9,13,15,16,14,17,237,43,39,45,134,135,124,62,136" decalId="Decals_Grunge_Scratch1" tiling="1,1" offset="0,0" />
+        <TextureDecal.State penetration="0.93" position="0.1473171,2.917859,8.236418" rotation="-0.006955206,0.7070726,0.7070726,-0.006955206" decalRotation="(0.00, 0.00, 0.00)" size="2.8,3.4,0.3" color="523E35" opacity="1" priority="0" target="Multiple Parts" partIds="79,80,8,81,82,83,9,62,84,88,89,90,91,92,93,13,39,43,45,240,121,242,137,14,15,16,17,124,134,136,135,237" decalId="Decals_Grunge_Scratch1" tiling="1,1" offset="0,0" />
       </Part>
     </Parts>
     <Connections>
