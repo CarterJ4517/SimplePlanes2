@@ -1,0 +1,481 @@
+    <Setter variable="" function="" priority="0" />
+    
+    <Setter variable="g" function="-9.81" priority="0" />
+    <Setter variable="vA" function="800" priority="0" />
+    <Setter variable="vB" function="800" priority="0" />
+    
+    <Setter variable="#vxtr" function="-rate(#Long)" priority="0" />
+    <Setter variable="#vytr" function="-rate(#Lat)" priority="0" />
+    <Setter variable="#vztr" function="-rate(#Alt)" priority="0" />
+    <Setter variable="#vdtr" function="-pow(pow(#vxtr,2)+pow(#vytr,2),0.5)" priority="0" />
+    <Setter variable="#offx" function="#Long-Longitude" priority="0" />
+    <Setter variable="#offy" function="#Lat-Latitude" priority="0" />
+    <Setter variable="#offz" function="#Alt-Altitude" priority="0" />
+    <Setter variable="#offd" function="pow(pow(#offx,2)+pow(#offy,2),0.5)" priority="0" />
+    <Setter variable="#dt" function="TargetDistance*cos(TargetElevation) - #offd" priority="0" />
+    <Setter variable="#zt" function="TargetDistance*sin(TargetElevation) - #offz" priority="0" />
+    <Setter variable="#a1" function="(g*pow(#dt,2))/(2*pow([vCannon],2))" priority="0" />
+    <Setter variable="#b1" function="#dt" priority="0" />
+    <Setter variable="#c1" function="#a1-#zt" priority="0" />
+    <Setter variable="#u" function="(-#b1+sqrt(pow(#b1,2) - 4*#a1*#c1))/(2*#a1)" priority="0" />
+    <Setter variable="#pe" function="atan(#u)" priority="0" />
+    <Setter variable="#a" function="#pe" priority="0" />
+    <Setter variable="#o0" function="(g/2)*pow(#dt/([vCannon]*cos(#a)-#vdtr),2) + ([vCannon]*sin(#a)-#vztr)*(#dt/([vCannon]*cos(#a)-#vdtr)) - #zt" priority="0" />
+    <Setter variable="#o1" function="(pi/180)*((#dt*[vCannon]*sin(#a)*([vCannon]*sin(#a)-#vztr))/pow([vCannon]*cos(#a)-#vdtr,2) + (pow(#dt,2)*g*[vCannon]*sin(#a))/pow([vCannon]*cos(#a)-#vdtr,3) + (#dt*[vCannon]*cos(#a))/([vCannon]*cos(#a)-#vdtr))" priority="0" />
+    <Setter variable="#o2" function="pow(pi/180,2)*((3*g*pow(#dt*[vCannon]*sin(#a),2))/pow([vCannon]*cos(#a)-#vdtr,4) + (2*#dt*pow([vCannon]*sin(#a),2)*([vCannon]*sin(#a)-#vztr))/pow([vCannon]*cos(#a)-#vdtr,3) + (#dt*[vCannon]*cos(#a)*([vCannon]*sin(#a)-#vztr))/pow([vCannon]*cos(#a)-#vdtr,2) - (#dt*[vCannon]*sin(#a))/([vCannon]*cos(#a)-#vdtr) + (2*#dt*pow([vCannon],2)*cos(#a)*sin(#a))/pow([vCannon]*cos(#a)-#vdtr,2) + (pow(#dt,2)*g*[vCannon]*cos(#a))/pow([vCannon]*cos(#a)-#vdtr,3))" priority="0" />
+    <Setter variable="#a2" function="#o2/2" priority="0" />
+    <Setter variable="#b2" function="#o1-#o2*#a" priority="0" />
+    <Setter variable="#c2" function="#o0-#o1*#a+(#o2*pow(#a,2))/2" priority="0" />
+    <Setter variable="#phi1" function="(-#b2+sqrt(pow(#b2,2) - 4*#a2*#c2))/(2*#a2)" priority="0" />
+    <Setter variable="#vz" function="[vCannon]*sin(#phi1)" priority="0" />
+    <Setter variable="#checkee" function="#zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="#t" function="(-#vz+#vztr+#checkee*sqrt(pow(#vz-#vztr,2)+2*(g)*(#zt)))/g" priority="0" />
+    <Setter variable="#xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - #offx + #vxtr*#t" priority="0" />
+    <Setter variable="#yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - #offy + #vytr*#t" priority="0" />
+    <Setter variable="#theta1" function="atan2(#xexp,#yexp)" priority="0" />
+
+    <Setter variable="A1vxtr" function="-rate(A1Long)" priority="0" />
+    <Setter variable="A1vytr" function="-rate(A1Lat)" priority="0" />
+    <Setter variable="A1vztr" function="-rate(A1Alt)" priority="0" />
+    <Setter variable="A1vdtr" function="-pow(pow(A1vxtr,2)+pow(A1vytr,2),0.5)" priority="0" />
+    <Setter variable="A1offx" function="A1Long-Longitude" priority="0" />
+    <Setter variable="A1offy" function="A1Lat-Latitude" priority="0" />
+    <Setter variable="A1offz" function="A1Alt-Altitude" priority="0" />
+    <Setter variable="A1offd" function="pow(pow(A1offx,2)+pow(A1offy,2),0.5)" priority="0" />
+    <Setter variable="A1dt" function="TargetDistance*cos(TargetElevation) - A1offd" priority="0" />
+    <Setter variable="A1zt" function="TargetDistance*sin(TargetElevation) - A1offz" priority="0" />
+    <Setter variable="A1a1" function="(g*pow(A1dt,2))/(2*pow(vA,2))" priority="0" />
+    <Setter variable="A1b1" function="A1dt" priority="0" />
+    <Setter variable="A1c1" function="A1a1-A1zt" priority="0" />
+    <Setter variable="A1u" function="(-A1b1+sqrt(pow(A1b1,2) - 4*A1a1*A1c1))/(2*A1a1)" priority="0" />
+    <Setter variable="A1pe" function="atan(A1u)" priority="0" />
+    <Setter variable="A1a" function="A1pe" priority="0" />
+    <Setter variable="A1o0" function="(g/2)*pow(A1dt/(vA*cos(A1a)-A1vdtr),2) + (vA*sin(A1a)-A1vztr)*(A1dt/(vA*cos(A1a)-A1vdtr)) - A1zt" priority="0" />
+    <Setter variable="A1o1" function="(pi/180)*((A1dt*vA*sin(A1a)*(vA*sin(A1a)-A1vztr))/pow(vA*cos(A1a)-A1vdtr,2) + (pow(A1dt,2)*g*vA*sin(A1a))/pow(vA*cos(A1a)-A1vdtr,3) + (A1dt*vA*cos(A1a))/(vA*cos(A1a)-A1vdtr))" priority="0" />
+    <Setter variable="A1o2" function="pow(pi/180,2)*((3*g*pow(A1dt*vA*sin(A1a),2))/pow(vA*cos(A1a)-A1vdtr,4) + (2*A1dt*pow(vA*sin(A1a),2)*(vA*sin(A1a)-A1vztr))/pow(vA*cos(A1a)-A1vdtr,3) + (A1dt*vA*cos(A1a)*(vA*sin(A1a)-A1vztr))/pow(vA*cos(A1a)-A1vdtr,2) - (A1dt*vA*sin(A1a))/(vA*cos(A1a)-A1vdtr) + (2*A1dt*pow(vA,2)*cos(A1a)*sin(A1a))/pow(vA*cos(A1a)-A1vdtr,2) + (pow(A1dt,2)*g*vA*cos(A1a))/pow(vA*cos(A1a)-A1vdtr,3))" priority="0" />
+    <Setter variable="A1a2" function="A1o2/2" priority="0" />
+    <Setter variable="A1b2" function="A1o1-A1o2*A1a" priority="0" />
+    <Setter variable="A1c2" function="A1o0-A1o1*A1a+(A1o2*pow(A1a,2))/2" priority="0" />
+    <Setter variable="A1phi1" function="(-A1b2+sqrt(pow(A1b2,2) - 4*A1a2*A1c2))/(2*A1a2)" priority="0" />
+    <Setter variable="A1vz" function="vA*sin(A1phi1)" priority="0" />
+    <Setter variable="A1checkee" function="A1zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="A1t" function="(-A1vz+A1vztr+A1checkee*sqrt(pow(A1vz-A1vztr,2)+2*(g)*(A1zt)))/g" priority="0" />
+    <Setter variable="A1xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - A1offx + A1vxtr*A1t" priority="0" />
+    <Setter variable="A1yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - A1offy + A1vytr*A1t" priority="0" />
+    <Setter variable="A1theta1" function="atan2(A1xexp,A1yexp)" priority="0" />
+
+    <Setter variable="A2vxtr" function="-rate(A2Long)" priority="0" />
+    <Setter variable="A2vytr" function="-rate(A2Lat)" priority="0" />
+    <Setter variable="A2vztr" function="-rate(A2Alt)" priority="0" />
+    <Setter variable="A2vdtr" function="-pow(pow(A2vxtr,2)+pow(A2vytr,2),0.5)" priority="0" />
+    <Setter variable="A2offx" function="A2Long-Longitude" priority="0" />
+    <Setter variable="A2offy" function="A2Lat-Latitude" priority="0" />
+    <Setter variable="A2offz" function="A2Alt-Altitude" priority="0" />
+    <Setter variable="A2offd" function="pow(pow(A2offx,2)+pow(A2offy,2),0.5)" priority="0" />
+    <Setter variable="A2dt" function="TargetDistance*cos(TargetElevation) - A2offd" priority="0" />
+    <Setter variable="A2zt" function="TargetDistance*sin(TargetElevation) - A2offz" priority="0" />
+    <Setter variable="A2a1" function="(g*pow(A2dt,2))/(2*pow(vA,2))" priority="0" />
+    <Setter variable="A2b1" function="A2dt" priority="0" />
+    <Setter variable="A2c1" function="A2a1-A2zt" priority="0" />
+    <Setter variable="A2u" function="(-A2b1+sqrt(pow(A2b1,2) - 4*A2a1*A2c1))/(2*A2a1)" priority="0" />
+    <Setter variable="A2pe" function="atan(A2u)" priority="0" />
+    <Setter variable="A2a" function="A2pe" priority="0" />
+    <Setter variable="A2o0" function="(g/2)*pow(A2dt/(vA*cos(A2a)-A2vdtr),2) + (vA*sin(A2a)-A2vztr)*(A2dt/(vA*cos(A2a)-A2vdtr)) - A2zt" priority="0" />
+    <Setter variable="A2o1" function="(pi/180)*((A2dt*vA*sin(A2a)*(vA*sin(A2a)-A2vztr))/pow(vA*cos(A2a)-A2vdtr,2) + (pow(A2dt,2)*g*vA*sin(A2a))/pow(vA*cos(A2a)-A2vdtr,3) + (A2dt*vA*cos(A2a))/(vA*cos(A2a)-A2vdtr))" priority="0" />
+    <Setter variable="A2o2" function="pow(pi/180,2)*((3*g*pow(A2dt*vA*sin(A2a),2))/pow(vA*cos(A2a)-A2vdtr,4) + (2*A2dt*pow(vA*sin(A2a),2)*(vA*sin(A2a)-A2vztr))/pow(vA*cos(A2a)-A2vdtr,3) + (A2dt*vA*cos(A2a)*(vA*sin(A2a)-A2vztr))/pow(vA*cos(A2a)-A2vdtr,2) - (A2dt*vA*sin(A2a))/(vA*cos(A2a)-A2vdtr) + (2*A2dt*pow(vA,2)*cos(A2a)*sin(A2a))/pow(vA*cos(A2a)-A2vdtr,2) + (pow(A2dt,2)*g*vA*cos(A2a))/pow(vA*cos(A2a)-A2vdtr,3))" priority="0" />
+    <Setter variable="A2a2" function="A2o2/2" priority="0" />
+    <Setter variable="A2b2" function="A2o1-A2o2*A2a" priority="0" />
+    <Setter variable="A2c2" function="A2o0-A2o1*A2a+(A2o2*pow(A2a,2))/2" priority="0" />
+    <Setter variable="A2phi1" function="(-A2b2+sqrt(pow(A2b2,2) - 4*A2a2*A2c2))/(2*A2a2)" priority="0" />
+    <Setter variable="A2vz" function="vA*sin(A2phi1)" priority="0" />
+    <Setter variable="A2checkee" function="A2zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="A2t" function="(-A2vz+A2vztr+A2checkee*sqrt(pow(A2vz-A2vztr,2)+2*(g)*(A2zt)))/g" priority="0" />
+    <Setter variable="A2xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - A2offx + A2vxtr*A2t" priority="0" />
+    <Setter variable="A2yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - A2offy + A2vytr*A2t" priority="0" />
+    <Setter variable="A2theta1" function="atan2(A2xexp,A2yexp)" priority="0" />
+
+    <Setter variable="A3vxtr" function="-rate(A3Long)" priority="0" />
+    <Setter variable="A3vytr" function="-rate(A3Lat)" priority="0" />
+    <Setter variable="A3vztr" function="-rate(A3Alt)" priority="0" />
+    <Setter variable="A3vdtr" function="-pow(pow(A3vxtr,2)+pow(A3vytr,2),0.5)" priority="0" />
+    <Setter variable="A3offx" function="A3Long-Longitude" priority="0" />
+    <Setter variable="A3offy" function="A3Lat-Latitude" priority="0" />
+    <Setter variable="A3offz" function="A3Alt-Altitude" priority="0" />
+    <Setter variable="A3offd" function="pow(pow(A3offx,2)+pow(A3offy,2),0.5)" priority="0" />
+    <Setter variable="A3dt" function="TargetDistance*cos(TargetElevation) - A3offd" priority="0" />
+    <Setter variable="A3zt" function="TargetDistance*sin(TargetElevation) - A3offz" priority="0" />
+    <Setter variable="A3a1" function="(g*pow(A3dt,2))/(2*pow(vA,2))" priority="0" />
+    <Setter variable="A3b1" function="A3dt" priority="0" />
+    <Setter variable="A3c1" function="A3a1-A3zt" priority="0" />
+    <Setter variable="A3u" function="(-A3b1+sqrt(pow(A3b1,2) - 4*A3a1*A3c1))/(2*A3a1)" priority="0" />
+    <Setter variable="A3pe" function="atan(A3u)" priority="0" />
+    <Setter variable="A3a" function="A3pe" priority="0" />
+    <Setter variable="A3o0" function="(g/2)*pow(A3dt/(vA*cos(A3a)-A3vdtr),2) + (vA*sin(A3a)-A3vztr)*(A3dt/(vA*cos(A3a)-A3vdtr)) - A3zt" priority="0" />
+    <Setter variable="A3o1" function="(pi/180)*((A3dt*vA*sin(A3a)*(vA*sin(A3a)-A3vztr))/pow(vA*cos(A3a)-A3vdtr,2) + (pow(A3dt,2)*g*vA*sin(A3a))/pow(vA*cos(A3a)-A3vdtr,3) + (A3dt*vA*cos(A3a))/(vA*cos(A3a)-A3vdtr))" priority="0" />
+    <Setter variable="A3o2" function="pow(pi/180,2)*((3*g*pow(A3dt*vA*sin(A3a),2))/pow(vA*cos(A3a)-A3vdtr,4) + (2*A3dt*pow(vA*sin(A3a),2)*(vA*sin(A3a)-A3vztr))/pow(vA*cos(A3a)-A3vdtr,3) + (A3dt*vA*cos(A3a)*(vA*sin(A3a)-A3vztr))/pow(vA*cos(A3a)-A3vdtr,2) - (A3dt*vA*sin(A3a))/(vA*cos(A3a)-A3vdtr) + (2*A3dt*pow(vA,2)*cos(A3a)*sin(A3a))/pow(vA*cos(A3a)-A3vdtr,2) + (pow(A3dt,2)*g*vA*cos(A3a))/pow(vA*cos(A3a)-A3vdtr,3))" priority="0" />
+    <Setter variable="A3a2" function="A3o2/2" priority="0" />
+    <Setter variable="A3b2" function="A3o1-A3o2*A3a" priority="0" />
+    <Setter variable="A3c2" function="A3o0-A3o1*A3a+(A3o2*pow(A3a,2))/2" priority="0" />
+    <Setter variable="A3phi1" function="(-A3b2+sqrt(pow(A3b2,2) - 4*A3a2*A3c2))/(2*A3a2)" priority="0" />
+    <Setter variable="A3vz" function="vA*sin(A3phi1)" priority="0" />
+    <Setter variable="A3checkee" function="A3zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="A3t" function="(-A3vz+A3vztr+A3checkee*sqrt(pow(A3vz-A3vztr,2)+2*(g)*(A3zt)))/g" priority="0" />
+    <Setter variable="A3xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - A3offx + A3vxtr*A3t" priority="0" />
+    <Setter variable="A3yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - A3offy + A3vytr*A3t" priority="0" />
+    <Setter variable="A3theta1" function="atan2(A3xexp,A3yexp)" priority="0" />
+
+    <Setter variable="B1vxtr" function="-rate(B1Long)" priority="0" />
+    <Setter variable="B1vytr" function="-rate(B1Lat)" priority="0" />
+    <Setter variable="B1vztr" function="-rate(B1Alt)" priority="0" />
+    <Setter variable="B1vdtr" function="-pow(pow(B1vxtr,2)+pow(B1vytr,2),0.5)" priority="0" />
+    <Setter variable="B1offx" function="B1Long-Longitude" priority="0" />
+    <Setter variable="B1offy" function="B1Lat-Latitude" priority="0" />
+    <Setter variable="B1offz" function="B1Alt-Altitude" priority="0" />
+    <Setter variable="B1offd" function="pow(pow(B1offx,2)+pow(B1offy,2),0.5)" priority="0" />
+    <Setter variable="B1dt" function="TargetDistance*cos(TargetElevation) - B1offd" priority="0" />
+    <Setter variable="B1zt" function="TargetDistance*sin(TargetElevation) - B1offz" priority="0" />
+    <Setter variable="B1a1" function="(g*pow(B1dt,2))/(2*pow(vB,2))" priority="0" />
+    <Setter variable="B1b1" function="B1dt" priority="0" />
+    <Setter variable="B1c1" function="B1a1-B1zt" priority="0" />
+    <Setter variable="B1u" function="(-B1b1+sqrt(pow(B1b1,2) - 4*B1a1*B1c1))/(2*B1a1)" priority="0" />
+    <Setter variable="B1pe" function="atan(B1u)" priority="0" />
+    <Setter variable="B1a" function="B1pe" priority="0" />
+    <Setter variable="B1o0" function="(g/2)*pow(B1dt/(vB*cos(B1a)-B1vdtr),2) + (vB*sin(B1a)-B1vztr)*(B1dt/(vB*cos(B1a)-B1vdtr)) - B1zt" priority="0" />
+    <Setter variable="B1o1" function="(pi/180)*((B1dt*vB*sin(B1a)*(vB*sin(B1a)-B1vztr))/pow(vB*cos(B1a)-B1vdtr,2) + (pow(B1dt,2)*g*vB*sin(B1a))/pow(vB*cos(B1a)-B1vdtr,3) + (B1dt*vB*cos(B1a))/(vB*cos(B1a)-B1vdtr))" priority="0" />
+    <Setter variable="B1o2" function="pow(pi/180,2)*((3*g*pow(B1dt*vB*sin(B1a),2))/pow(vB*cos(B1a)-B1vdtr,4) + (2*B1dt*pow(vB*sin(B1a),2)*(vB*sin(B1a)-B1vztr))/pow(vB*cos(B1a)-B1vdtr,3) + (B1dt*vB*cos(B1a)*(vB*sin(B1a)-B1vztr))/pow(vB*cos(B1a)-B1vdtr,2) - (B1dt*vB*sin(B1a))/(vB*cos(B1a)-B1vdtr) + (2*B1dt*pow(vB,2)*cos(B1a)*sin(B1a))/pow(vB*cos(B1a)-B1vdtr,2) + (pow(B1dt,2)*g*vB*cos(B1a))/pow(vB*cos(B1a)-B1vdtr,3))" priority="0" />
+    <Setter variable="B1a2" function="B1o2/2" priority="0" />
+    <Setter variable="B1b2" function="B1o1-B1o2*B1a" priority="0" />
+    <Setter variable="B1c2" function="B1o0-B1o1*B1a+(B1o2*pow(B1a,2))/2" priority="0" />
+    <Setter variable="B1phi1" function="(-B1b2+sqrt(pow(B1b2,2) - 4*B1a2*B1c2))/(2*B1a2)" priority="0" />
+    <Setter variable="B1vz" function="vB*sin(B1phi1)" priority="0" />
+    <Setter variable="B1checkee" function="B1zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="B1t" function="(-B1vz+B1vztr+B1checkee*sqrt(pow(B1vz-B1vztr,2)+2*(g)*(B1zt)))/g" priority="0" />
+    <Setter variable="B1xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - B1offx + B1vxtr*B1t" priority="0" />
+    <Setter variable="B1yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - B1offy + B1vytr*B1t" priority="0" />
+    <Setter variable="B1theta1" function="atan2(B1xexp,B1yexp)" priority="0" />
+
+    <Setter variable="B2vxtr" function="-rate(B2Long)" priority="0" />
+    <Setter variable="B2vytr" function="-rate(B2Lat)" priority="0" />
+    <Setter variable="B2vztr" function="-rate(B2Alt)" priority="0" />
+    <Setter variable="B2vdtr" function="-pow(pow(B2vxtr,2)+pow(B2vytr,2),0.5)" priority="0" />
+    <Setter variable="B2offx" function="B2Long-Longitude" priority="0" />
+    <Setter variable="B2offy" function="B2Lat-Latitude" priority="0" />
+    <Setter variable="B2offz" function="B2Alt-Altitude" priority="0" />
+    <Setter variable="B2offd" function="pow(pow(B2offx,2)+pow(B2offy,2),0.5)" priority="0" />
+    <Setter variable="B2dt" function="TargetDistance*cos(TargetElevation) - B2offd" priority="0" />
+    <Setter variable="B2zt" function="TargetDistance*sin(TargetElevation) - B2offz" priority="0" />
+    <Setter variable="B2a1" function="(g*pow(B2dt,2))/(2*pow(vB,2))" priority="0" />
+    <Setter variable="B2b1" function="B2dt" priority="0" />
+    <Setter variable="B2c1" function="B2a1-B2zt" priority="0" />
+    <Setter variable="B2u" function="(-B2b1+sqrt(pow(B2b1,2) - 4*B2a1*B2c1))/(2*B2a1)" priority="0" />
+    <Setter variable="B2pe" function="atan(B2u)" priority="0" />
+    <Setter variable="B2a" function="B2pe" priority="0" />
+    <Setter variable="B2o0" function="(g/2)*pow(B2dt/(vB*cos(B2a)-B2vdtr),2) + (vB*sin(B2a)-B2vztr)*(B2dt/(vB*cos(B2a)-B2vdtr)) - B2zt" priority="0" />
+    <Setter variable="B2o1" function="(pi/180)*((B2dt*vB*sin(B2a)*(vB*sin(B2a)-B2vztr))/pow(vB*cos(B2a)-B2vdtr,2) + (pow(B2dt,2)*g*vB*sin(B2a))/pow(vB*cos(B2a)-B2vdtr,3) + (B2dt*vB*cos(B2a))/(vB*cos(B2a)-B2vdtr))" priority="0" />
+    <Setter variable="B2o2" function="pow(pi/180,2)*((3*g*pow(B2dt*vB*sin(B2a),2))/pow(vB*cos(B2a)-B2vdtr,4) + (2*B2dt*pow(vB*sin(B2a),2)*(vB*sin(B2a)-B2vztr))/pow(vB*cos(B2a)-B2vdtr,3) + (B2dt*vB*cos(B2a)*(vB*sin(B2a)-B2vztr))/pow(vB*cos(B2a)-B2vdtr,2) - (B2dt*vB*sin(B2a))/(vB*cos(B2a)-B2vdtr) + (2*B2dt*pow(vB,2)*cos(B2a)*sin(B2a))/pow(vB*cos(B2a)-B2vdtr,2) + (pow(B2dt,2)*g*vB*cos(B2a))/pow(vB*cos(B2a)-B2vdtr,3))" priority="0" />
+    <Setter variable="B2a2" function="B2o2/2" priority="0" />
+    <Setter variable="B2b2" function="B2o1-B2o2*B2a" priority="0" />
+    <Setter variable="B2c2" function="B2o0-B2o1*B2a+(B2o2*pow(B2a,2))/2" priority="0" />
+    <Setter variable="B2phi1" function="(-B2b2+sqrt(pow(B2b2,2) - 4*B2a2*B2c2))/(2*B2a2)" priority="0" />
+    <Setter variable="B2vz" function="vB*sin(B2phi1)" priority="0" />
+    <Setter variable="B2checkee" function="B2zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="B2t" function="(-B2vz+B2vztr+B2checkee*sqrt(pow(B2vz-B2vztr,2)+2*(g)*(B2zt)))/g" priority="0" />
+    <Setter variable="B2xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - B2offx + B2vxtr*B2t" priority="0" />
+    <Setter variable="B2yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - B2offy + B2vytr*B2t" priority="0" />
+    <Setter variable="B2theta1" function="atan2(B2xexp,B2yexp)" priority="0" />
+
+    <Setter variable="B3vxtr" function="-rate(B3Long)" priority="0" />
+    <Setter variable="B3vytr" function="-rate(B3Lat)" priority="0" />
+    <Setter variable="B3vztr" function="-rate(B3Alt)" priority="0" />
+    <Setter variable="B3vdtr" function="-pow(pow(B3vxtr,2)+pow(B3vytr,2),0.5)" priority="0" />
+    <Setter variable="B3offx" function="B3Long-Longitude" priority="0" />
+    <Setter variable="B3offy" function="B3Lat-Latitude" priority="0" />
+    <Setter variable="B3offz" function="B3Alt-Altitude" priority="0" />
+    <Setter variable="B3offd" function="pow(pow(B3offx,2)+pow(B3offy,2),0.5)" priority="0" />
+    <Setter variable="B3dt" function="TargetDistance*cos(TargetElevation) - B3offd" priority="0" />
+    <Setter variable="B3zt" function="TargetDistance*sin(TargetElevation) - B3offz" priority="0" />
+    <Setter variable="B3a1" function="(g*pow(B3dt,2))/(2*pow(vB,2))" priority="0" />
+    <Setter variable="B3b1" function="B3dt" priority="0" />
+    <Setter variable="B3c1" function="B3a1-B3zt" priority="0" />
+    <Setter variable="B3u" function="(-B3b1+sqrt(pow(B3b1,2) - 4*B3a1*B3c1))/(2*B3a1)" priority="0" />
+    <Setter variable="B3pe" function="atan(B3u)" priority="0" />
+    <Setter variable="B3a" function="B3pe" priority="0" />
+    <Setter variable="B3o0" function="(g/2)*pow(B3dt/(vB*cos(B3a)-B3vdtr),2) + (vB*sin(B3a)-B3vztr)*(B3dt/(vB*cos(B3a)-B3vdtr)) - B3zt" priority="0" />
+    <Setter variable="B3o1" function="(pi/180)*((B3dt*vB*sin(B3a)*(vB*sin(B3a)-B3vztr))/pow(vB*cos(B3a)-B3vdtr,2) + (pow(B3dt,2)*g*vB*sin(B3a))/pow(vB*cos(B3a)-B3vdtr,3) + (B3dt*vB*cos(B3a))/(vB*cos(B3a)-B3vdtr))" priority="0" />
+    <Setter variable="B3o2" function="pow(pi/180,2)*((3*g*pow(B3dt*vB*sin(B3a),2))/pow(vB*cos(B3a)-B3vdtr,4) + (2*B3dt*pow(vB*sin(B3a),2)*(vB*sin(B3a)-B3vztr))/pow(vB*cos(B3a)-B3vdtr,3) + (B3dt*vB*cos(B3a)*(vB*sin(B3a)-B3vztr))/pow(vB*cos(B3a)-B3vdtr,2) - (B3dt*vB*sin(B3a))/(vB*cos(B3a)-B3vdtr) + (2*B3dt*pow(vB,2)*cos(B3a)*sin(B3a))/pow(vB*cos(B3a)-B3vdtr,2) + (pow(B3dt,2)*g*vB*cos(B3a))/pow(vB*cos(B3a)-B3vdtr,3))" priority="0" />
+    <Setter variable="B3a2" function="B3o2/2" priority="0" />
+    <Setter variable="B3b2" function="B3o1-B3o2*B3a" priority="0" />
+    <Setter variable="B3c2" function="B3o0-B3o1*B3a+(B3o2*pow(B3a,2))/2" priority="0" />
+    <Setter variable="B3phi1" function="(-B3b2+sqrt(pow(B3b2,2) - 4*B3a2*B3c2))/(2*B3a2)" priority="0" />
+    <Setter variable="B3vz" function="vB*sin(B3phi1)" priority="0" />
+    <Setter variable="B3checkee" function="B3zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="B3t" function="(-B3vz+B3vztr+B3checkee*sqrt(pow(B3vz-B3vztr,2)+2*(g)*(B3zt)))/g" priority="0" />
+    <Setter variable="B3xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - B3offx + B3vxtr*B3t" priority="0" />
+    <Setter variable="B3yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - B3offy + B3vytr*B3t" priority="0" />
+    <Setter variable="B3theta1" function="atan2(B3xexp,B3yexp)" priority="0" />
+
+    <Setter variable="B4vxtr" function="-rate(B4Long)" priority="0" />
+    <Setter variable="B4vytr" function="-rate(B4Lat)" priority="0" />
+    <Setter variable="B4vztr" function="-rate(B4Alt)" priority="0" />
+    <Setter variable="B4vdtr" function="-pow(pow(B4vxtr,2)+pow(B4vytr,2),0.5)" priority="0" />
+    <Setter variable="B4offx" function="B4Long-Longitude" priority="0" />
+    <Setter variable="B4offy" function="B4Lat-Latitude" priority="0" />
+    <Setter variable="B4offz" function="B4Alt-Altitude" priority="0" />
+    <Setter variable="B4offd" function="pow(pow(B4offx,2)+pow(B4offy,2),0.5)" priority="0" />
+    <Setter variable="B4dt" function="TargetDistance*cos(TargetElevation) - B4offd" priority="0" />
+    <Setter variable="B4zt" function="TargetDistance*sin(TargetElevation) - B4offz" priority="0" />
+    <Setter variable="B4a1" function="(g*pow(B4dt,2))/(2*pow(vB,2))" priority="0" />
+    <Setter variable="B4b1" function="B4dt" priority="0" />
+    <Setter variable="B4c1" function="B4a1-B4zt" priority="0" />
+    <Setter variable="B4u" function="(-B4b1+sqrt(pow(B4b1,2) - 4*B4a1*B4c1))/(2*B4a1)" priority="0" />
+    <Setter variable="B4pe" function="atan(B4u)" priority="0" />
+    <Setter variable="B4a" function="B4pe" priority="0" />
+    <Setter variable="B4o0" function="(g/2)*pow(B4dt/(vB*cos(B4a)-B4vdtr),2) + (vB*sin(B4a)-B4vztr)*(B4dt/(vB*cos(B4a)-B4vdtr)) - B4zt" priority="0" />
+    <Setter variable="B4o1" function="(pi/180)*((B4dt*vB*sin(B4a)*(vB*sin(B4a)-B4vztr))/pow(vB*cos(B4a)-B4vdtr,2) + (pow(B4dt,2)*g*vB*sin(B4a))/pow(vB*cos(B4a)-B4vdtr,3) + (B4dt*vB*cos(B4a))/(vB*cos(B4a)-B4vdtr))" priority="0" />
+    <Setter variable="B4o2" function="pow(pi/180,2)*((3*g*pow(B4dt*vB*sin(B4a),2))/pow(vB*cos(B4a)-B4vdtr,4) + (2*B4dt*pow(vB*sin(B4a),2)*(vB*sin(B4a)-B4vztr))/pow(vB*cos(B4a)-B4vdtr,3) + (B4dt*vB*cos(B4a)*(vB*sin(B4a)-B4vztr))/pow(vB*cos(B4a)-B4vdtr,2) - (B4dt*vB*sin(B4a))/(vB*cos(B4a)-B4vdtr) + (2*B4dt*pow(vB,2)*cos(B4a)*sin(B4a))/pow(vB*cos(B4a)-B4vdtr,2) + (pow(B4dt,2)*g*vB*cos(B4a))/pow(vB*cos(B4a)-B4vdtr,3))" priority="0" />
+    <Setter variable="B4a2" function="B4o2/2" priority="0" />
+    <Setter variable="B4b2" function="B4o1-B4o2*B4a" priority="0" />
+    <Setter variable="B4c2" function="B4o0-B4o1*B4a+(B4o2*pow(B4a,2))/2" priority="0" />
+    <Setter variable="B4phi1" function="(-B4b2+sqrt(pow(B4b2,2) - 4*B4a2*B4c2))/(2*B4a2)" priority="0" />
+    <Setter variable="B4vz" function="vB*sin(B4phi1)" priority="0" />
+    <Setter variable="B4checkee" function="B4zt &gt; 0 ? 1 : -1" priority="0" />
+    <Setter variable="B4t" function="(-B4vz+B4vztr+B4checkee*sqrt(pow(B4vz-B4vztr,2)+2*(g)*(B4zt)))/g" priority="0" />
+    <Setter variable="B4xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) - B4offx + B4vxtr*B4t" priority="0" />
+    <Setter variable="B4yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) - B4offy + B4vytr*B4t" priority="0" />
+    <Setter variable="B4theta1" function="atan2(B4xexp,B4yexp)" priority="0" />
+
+
+
+    <Setter variable="H" function="Heading" priority="0" />
+    <Setter variable="P" function="PitchAngle" priority="0" />
+    <Setter variable="R" function="RollAngle" priority="0" />
+    <Setter variable="vrotx" function="cos(H)*cos(P)" priority="0" />
+    <Setter variable="vroty" function="sin(H)*cos(P)" priority="0" />
+    <Setter variable="vrotz" function="sin(P)" priority="0" />
+    <Setter variable="e1x" function="-cos(H)*sin(P)*cos(R)+sin(H)*sin(R)" priority="0" />
+    <Setter variable="e1y" function="-sin(H)*sin(P)*cos(R)-cos(H)*sin(R)" priority="0" />
+    <Setter variable="e1z" function="cos(P)*cos(R)" priority="0" />
+
+    <Setter variable="#Htarget" function="#theta1" priority="0" />
+    <Setter variable="#Ptarget" function="#phi1" priority="0" />
+    <Setter variable="#vfinalx" function="cos(#Htarget)*cos(#Ptarget)" priority="0" />
+    <Setter variable="#vfinaly" function="sin(#Htarget)*cos(#Ptarget)" priority="0" />
+    <Setter variable="#vfinalz" function="sin(#Ptarget)" priority="0" />
+    <Setter variable="#e2tempx" function="e1y*#vfinalz - e1z*#vfinaly " priority="0" />
+    <Setter variable="#e2tempy" function="e1z*#vfinalx - e1x*#vfinalz " priority="0" />
+    <Setter variable="#e2tempz" function="e1x*#vfinaly - e1y*#vfinalx " priority="0" />
+    <Setter variable="#e2mag" function="pow(pow(#e2tempx,2)+pow(#e2tempy,2)+pow(#e2tempz,2),0.5) " priority="0" />
+    <Setter variable="#e2x" function="#e2tempx/#e2mag" priority="0" />
+    <Setter variable="#e2y" function="#e2tempy/#e2mag" priority="0" />
+    <Setter variable="#e2z" function="#e2tempz/#e2mag" priority="0" />
+    <Setter variable="#vintertempx" function="#e2y*e1z-#e2z*e1y" priority="0" />
+    <Setter variable="#vintertempy" function="#e2z*e1x-#e2x*e1z" priority="0" />
+    <Setter variable="#vintertempz" function="#e2x*e1y-#e2y*e1x" priority="0" />
+    <Setter variable="#vintermag" function="pow(pow(#vintertempx,2)+pow(#vintertempy,2)+pow(#vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="#vinterx" function="#vintertempx/#vintermag" priority="0" />
+    <Setter variable="#vintery" function="#vintertempy/#vintermag" priority="0" />
+    <Setter variable="#vinterz" function="#vintertempz/#vintermag" priority="0" />
+    <Setter variable="#thetatemp" function="acos(vrotx*#vinterx + vroty*#vintery + vrotz*#vinterz)" priority="0" />
+    <Setter variable="#phitemp" function="acos(#vinterx*#vfinalx + #vintery*#vfinaly + #vinterz*#vfinalz)" priority="0" />
+    <Setter variable="#check1" function="e1x*(vroty*#vinterz-vrotz*#vintery) + e1y*(vrotz*#vinterx-vrotx*#vinterz) + e1z*(vrotx*#vintery-vroty*#vinterx)" priority="0" />
+    <Setter variable="#check2" function="#e2x*(#vintery*#vfinalz-#vinterz*#vfinaly) + #e2y*(#vinterz*#vfinalx-#vinterx*#vfinalz) + #e2z*(#vinterx*#vfinaly-#vintery*#vfinalx)" priority="0" />
+    <Setter variable="#theta" function="#thetatemp*(#check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="#phi" function="#phitemp*(#check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="#i" function="#theta/180" priority="0" />
+    <Setter variable="#j" function="#phi/90" priority="0" />
+
+    <Setter variable="A1Htarget" function="A1theta1" priority="0" />
+    <Setter variable="A1Ptarget" function="A1phi1" priority="0" />
+    <Setter variable="A1vfinalx" function="cos(A1Htarget)*cos(A1Ptarget)" priority="0" />
+    <Setter variable="A1vfinaly" function="sin(A1Htarget)*cos(A1Ptarget)" priority="0" />
+    <Setter variable="A1vfinalz" function="sin(A1Ptarget)" priority="0" />
+    <Setter variable="A1e2tempx" function="e1y*A1vfinalz - e1z*A1vfinaly " priority="0" />
+    <Setter variable="A1e2tempy" function="e1z*A1vfinalx - e1x*A1vfinalz " priority="0" />
+    <Setter variable="A1e2tempz" function="e1x*A1vfinaly - e1y*A1vfinalx " priority="0" />
+    <Setter variable="A1e2mag" function="pow(pow(A1e2tempx,2)+pow(A1e2tempy,2)+pow(A1e2tempz,2),0.5) " priority="0" />
+    <Setter variable="A1e2x" function="A1e2tempx/A1e2mag" priority="0" />
+    <Setter variable="A1e2y" function="A1e2tempy/A1e2mag" priority="0" />
+    <Setter variable="A1e2z" function="A1e2tempz/A1e2mag" priority="0" />
+    <Setter variable="A1vintertempx" function="A1e2y*e1z-A1e2z*e1y" priority="0" />
+    <Setter variable="A1vintertempy" function="A1e2z*e1x-A1e2x*e1z" priority="0" />
+    <Setter variable="A1vintertempz" function="A1e2x*e1y-A1e2y*e1x" priority="0" />
+    <Setter variable="A1vintermag" function="pow(pow(A1vintertempx,2)+pow(A1vintertempy,2)+pow(A1vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="A1vinterx" function="A1vintertempx/A1vintermag" priority="0" />
+    <Setter variable="A1vintery" function="A1vintertempy/A1vintermag" priority="0" />
+    <Setter variable="A1vinterz" function="A1vintertempz/A1vintermag" priority="0" />
+    <Setter variable="A1thetatemp" function="acos(vrotx*A1vinterx + vroty*A1vintery + vrotz*A1vinterz)" priority="0" />
+    <Setter variable="A1phitemp" function="acos(A1vinterx*A1vfinalx + A1vintery*A1vfinaly + A1vinterz*A1vfinalz)" priority="0" />
+    <Setter variable="A1check1" function="e1x*(vroty*A1vinterz-vrotz*A1vintery) + e1y*(vrotz*A1vinterx-vrotx*A1vinterz) + e1z*(vrotx*A1vintery-vroty*A1vinterx)" priority="0" />
+    <Setter variable="A1check2" function="A1e2x*(A1vintery*A1vfinalz-A1vinterz*A1vfinaly) + A1e2y*(A1vinterz*A1vfinalx-A1vinterx*A1vfinalz) + A1e2z*(A1vinterx*A1vfinaly-A1vintery*A1vfinalx)" priority="0" />
+    <Setter variable="A1theta" function="A1thetatemp*(A1check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A1phi" function="A1phitemp*(A1check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A1i" function="A1theta/180" priority="0" />
+    <Setter variable="A1j" function="A1phi/90" priority="0" />
+
+    <Setter variable="A2Htarget" function="A2theta1" priority="0" />
+    <Setter variable="A2Ptarget" function="A2phi1" priority="0" />
+    <Setter variable="A2vfinalx" function="cos(A2Htarget)*cos(A2Ptarget)" priority="0" />
+    <Setter variable="A2vfinaly" function="sin(A2Htarget)*cos(A2Ptarget)" priority="0" />
+    <Setter variable="A2vfinalz" function="sin(A2Ptarget)" priority="0" />
+    <Setter variable="A2e2tempx" function="e1y*A2vfinalz - e1z*A2vfinaly " priority="0" />
+    <Setter variable="A2e2tempy" function="e1z*A2vfinalx - e1x*A2vfinalz " priority="0" />
+    <Setter variable="A2e2tempz" function="e1x*A2vfinaly - e1y*A2vfinalx " priority="0" />
+    <Setter variable="A2e2mag" function="pow(pow(A2e2tempx,2)+pow(A2e2tempy,2)+pow(A2e2tempz,2),0.5) " priority="0" />
+    <Setter variable="A2e2x" function="A2e2tempx/A2e2mag" priority="0" />
+    <Setter variable="A2e2y" function="A2e2tempy/A2e2mag" priority="0" />
+    <Setter variable="A2e2z" function="A2e2tempz/A2e2mag" priority="0" />
+    <Setter variable="A2vintertempx" function="A2e2y*e1z-A2e2z*e1y" priority="0" />
+    <Setter variable="A2vintertempy" function="A2e2z*e1x-A2e2x*e1z" priority="0" />
+    <Setter variable="A2vintertempz" function="A2e2x*e1y-A2e2y*e1x" priority="0" />
+    <Setter variable="A2vintermag" function="pow(pow(A2vintertempx,2)+pow(A2vintertempy,2)+pow(A2vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="A2vinterx" function="A2vintertempx/A2vintermag" priority="0" />
+    <Setter variable="A2vintery" function="A2vintertempy/A2vintermag" priority="0" />
+    <Setter variable="A2vinterz" function="A2vintertempz/A2vintermag" priority="0" />
+    <Setter variable="A2thetatemp" function="acos(vrotx*A2vinterx + vroty*A2vintery + vrotz*A2vinterz)" priority="0" />
+    <Setter variable="A2phitemp" function="acos(A2vinterx*A2vfinalx + A2vintery*A2vfinaly + A2vinterz*A2vfinalz)" priority="0" />
+    <Setter variable="A2check1" function="e1x*(vroty*A2vinterz-vrotz*A2vintery) + e1y*(vrotz*A2vinterx-vrotx*A2vinterz) + e1z*(vrotx*A2vintery-vroty*A2vinterx)" priority="0" />
+    <Setter variable="A2check2" function="A2e2x*(A2vintery*A2vfinalz-A2vinterz*A2vfinaly) + A2e2y*(A2vinterz*A2vfinalx-A2vinterx*A2vfinalz) + A2e2z*(A2vinterx*A2vfinaly-A2vintery*A2vfinalx)" priority="0" />
+    <Setter variable="A2theta" function="A2thetatemp*(A2check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A2phi" function="A2phitemp*(A2check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A2i" function="A2theta/180" priority="0" />
+    <Setter variable="A2j" function="A2phi/90" priority="0" />
+
+    <Setter variable="A3Htarget" function="A3theta1" priority="0" />
+    <Setter variable="A3Ptarget" function="A3phi1" priority="0" />
+    <Setter variable="A3vfinalx" function="cos(A3Htarget)*cos(A3Ptarget)" priority="0" />
+    <Setter variable="A3vfinaly" function="sin(A3Htarget)*cos(A3Ptarget)" priority="0" />
+    <Setter variable="A3vfinalz" function="sin(A3Ptarget)" priority="0" />
+    <Setter variable="A3e2tempx" function="e1y*A3vfinalz - e1z*A3vfinaly " priority="0" />
+    <Setter variable="A3e2tempy" function="e1z*A3vfinalx - e1x*A3vfinalz " priority="0" />
+    <Setter variable="A3e2tempz" function="e1x*A3vfinaly - e1y*A3vfinalx " priority="0" />
+    <Setter variable="A3e2mag" function="pow(pow(A3e2tempx,2)+pow(A3e2tempy,2)+pow(A3e2tempz,2),0.5) " priority="0" />
+    <Setter variable="A3e2x" function="A3e2tempx/A3e2mag" priority="0" />
+    <Setter variable="A3e2y" function="A3e2tempy/A3e2mag" priority="0" />
+    <Setter variable="A3e2z" function="A3e2tempz/A3e2mag" priority="0" />
+    <Setter variable="A3vintertempx" function="A3e2y*e1z-A3e2z*e1y" priority="0" />
+    <Setter variable="A3vintertempy" function="A3e2z*e1x-A3e2x*e1z" priority="0" />
+    <Setter variable="A3vintertempz" function="A3e2x*e1y-A3e2y*e1x" priority="0" />
+    <Setter variable="A3vintermag" function="pow(pow(A3vintertempx,2)+pow(A3vintertempy,2)+pow(A3vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="A3vinterx" function="A3vintertempx/A3vintermag" priority="0" />
+    <Setter variable="A3vintery" function="A3vintertempy/A3vintermag" priority="0" />
+    <Setter variable="A3vinterz" function="A3vintertempz/A3vintermag" priority="0" />
+    <Setter variable="A3thetatemp" function="acos(vrotx*A3vinterx + vroty*A3vintery + vrotz*A3vinterz)" priority="0" />
+    <Setter variable="A3phitemp" function="acos(A3vinterx*A3vfinalx + A3vintery*A3vfinaly + A3vinterz*A3vfinalz)" priority="0" />
+    <Setter variable="A3check1" function="e1x*(vroty*A3vinterz-vrotz*A3vintery) + e1y*(vrotz*A3vinterx-vrotx*A3vinterz) + e1z*(vrotx*A3vintery-vroty*A3vinterx)" priority="0" />
+    <Setter variable="A3check2" function="A3e2x*(A3vintery*A3vfinalz-A3vinterz*A3vfinaly) + A3e2y*(A3vinterz*A3vfinalx-A3vinterx*A3vfinalz) + A3e2z*(A3vinterx*A3vfinaly-A3vintery*A3vfinalx)" priority="0" />
+    <Setter variable="A3theta" function="A3thetatemp*(A3check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A3phi" function="A3phitemp*(A3check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="A3i" function="A3theta/180" priority="0" />
+    <Setter variable="A3j" function="A3phi/90" priority="0" />
+
+    <Setter variable="B1Htarget" function="B1theta1" priority="0" />
+    <Setter variable="B1Ptarget" function="B1phi1" priority="0" />
+    <Setter variable="B1vfinalx" function="cos(B1Htarget)*cos(B1Ptarget)" priority="0" />
+    <Setter variable="B1vfinaly" function="sin(B1Htarget)*cos(B1Ptarget)" priority="0" />
+    <Setter variable="B1vfinalz" function="sin(B1Ptarget)" priority="0" />
+    <Setter variable="B1e2tempx" function="e1y*B1vfinalz - e1z*B1vfinaly " priority="0" />
+    <Setter variable="B1e2tempy" function="e1z*B1vfinalx - e1x*B1vfinalz " priority="0" />
+    <Setter variable="B1e2tempz" function="e1x*B1vfinaly - e1y*B1vfinalx " priority="0" />
+    <Setter variable="B1e2mag" function="pow(pow(B1e2tempx,2)+pow(B1e2tempy,2)+pow(B1e2tempz,2),0.5) " priority="0" />
+    <Setter variable="B1e2x" function="B1e2tempx/B1e2mag" priority="0" />
+    <Setter variable="B1e2y" function="B1e2tempy/B1e2mag" priority="0" />
+    <Setter variable="B1e2z" function="B1e2tempz/B1e2mag" priority="0" />
+    <Setter variable="B1vintertempx" function="B1e2y*e1z-B1e2z*e1y" priority="0" />
+    <Setter variable="B1vintertempy" function="B1e2z*e1x-B1e2x*e1z" priority="0" />
+    <Setter variable="B1vintertempz" function="B1e2x*e1y-B1e2y*e1x" priority="0" />
+    <Setter variable="B1vintermag" function="pow(pow(B1vintertempx,2)+pow(B1vintertempy,2)+pow(B1vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="B1vinterx" function="B1vintertempx/B1vintermag" priority="0" />
+    <Setter variable="B1vintery" function="B1vintertempy/B1vintermag" priority="0" />
+    <Setter variable="B1vinterz" function="B1vintertempz/B1vintermag" priority="0" />
+    <Setter variable="B1thetatemp" function="acos(vrotx*B1vinterx + vroty*B1vintery + vrotz*B1vinterz)" priority="0" />
+    <Setter variable="B1phitemp" function="acos(B1vinterx*B1vfinalx + B1vintery*B1vfinaly + B1vinterz*B1vfinalz)" priority="0" />
+    <Setter variable="B1check1" function="e1x*(vroty*B1vinterz-vrotz*B1vintery) + e1y*(vrotz*B1vinterx-vrotx*B1vinterz) + e1z*(vrotx*B1vintery-vroty*B1vinterx)" priority="0" />
+    <Setter variable="B1check2" function="B1e2x*(B1vintery*B1vfinalz-B1vinterz*B1vfinaly) + B1e2y*(B1vinterz*B1vfinalx-B1vinterx*B1vfinalz) + B1e2z*(B1vinterx*B1vfinaly-B1vintery*B1vfinalx)" priority="0" />
+    <Setter variable="B1theta" function="B1thetatemp*(B1check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B1phi" function="B1phitemp*(B1check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B1i" function="B1theta/180" priority="0" />
+    <Setter variable="B1j" function="B1phi/90" priority="0" />
+
+    <Setter variable="B2Htarget" function="B2theta1" priority="0" />
+    <Setter variable="B2Ptarget" function="B2phi1" priority="0" />
+    <Setter variable="B2vfinalx" function="cos(B2Htarget)*cos(B2Ptarget)" priority="0" />
+    <Setter variable="B2vfinaly" function="sin(B2Htarget)*cos(B2Ptarget)" priority="0" />
+    <Setter variable="B2vfinalz" function="sin(B2Ptarget)" priority="0" />
+    <Setter variable="B2e2tempx" function="e1y*B2vfinalz - e1z*B2vfinaly " priority="0" />
+    <Setter variable="B2e2tempy" function="e1z*B2vfinalx - e1x*B2vfinalz " priority="0" />
+    <Setter variable="B2e2tempz" function="e1x*B2vfinaly - e1y*B2vfinalx " priority="0" />
+    <Setter variable="B2e2mag" function="pow(pow(B2e2tempx,2)+pow(B2e2tempy,2)+pow(B2e2tempz,2),0.5) " priority="0" />
+    <Setter variable="B2e2x" function="B2e2tempx/B2e2mag" priority="0" />
+    <Setter variable="B2e2y" function="B2e2tempy/B2e2mag" priority="0" />
+    <Setter variable="B2e2z" function="B2e2tempz/B2e2mag" priority="0" />
+    <Setter variable="B2vintertempx" function="B2e2y*e1z-B2e2z*e1y" priority="0" />
+    <Setter variable="B2vintertempy" function="B2e2z*e1x-B2e2x*e1z" priority="0" />
+    <Setter variable="B2vintertempz" function="B2e2x*e1y-B2e2y*e1x" priority="0" />
+    <Setter variable="B2vintermag" function="pow(pow(B2vintertempx,2)+pow(B2vintertempy,2)+pow(B2vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="B2vinterx" function="B2vintertempx/B2vintermag" priority="0" />
+    <Setter variable="B2vintery" function="B2vintertempy/B2vintermag" priority="0" />
+    <Setter variable="B2vinterz" function="B2vintertempz/B2vintermag" priority="0" />
+    <Setter variable="B2thetatemp" function="acos(vrotx*B2vinterx + vroty*B2vintery + vrotz*B2vinterz)" priority="0" />
+    <Setter variable="B2phitemp" function="acos(B2vinterx*B2vfinalx + B2vintery*B2vfinaly + B2vinterz*B2vfinalz)" priority="0" />
+    <Setter variable="B2check1" function="e1x*(vroty*B2vinterz-vrotz*B2vintery) + e1y*(vrotz*B2vinterx-vrotx*B2vinterz) + e1z*(vrotx*B2vintery-vroty*B2vinterx)" priority="0" />
+    <Setter variable="B2check2" function="B2e2x*(B2vintery*B2vfinalz-B2vinterz*B2vfinaly) + B2e2y*(B2vinterz*B2vfinalx-B2vinterx*B2vfinalz) + B2e2z*(B2vinterx*B2vfinaly-B2vintery*B2vfinalx)" priority="0" />
+    <Setter variable="B2theta" function="B2thetatemp*(B2check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B2phi" function="B2phitemp*(B2check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B2i" function="B2theta/180" priority="0" />
+    <Setter variable="B2j" function="B2phi/90" priority="0" />
+
+    <Setter variable="B3Htarget" function="B3theta1" priority="0" />
+    <Setter variable="B3Ptarget" function="B3phi1" priority="0" />
+    <Setter variable="B3vfinalx" function="cos(B3Htarget)*cos(B3Ptarget)" priority="0" />
+    <Setter variable="B3vfinaly" function="sin(B3Htarget)*cos(B3Ptarget)" priority="0" />
+    <Setter variable="B3vfinalz" function="sin(B3Ptarget)" priority="0" />
+    <Setter variable="B3e2tempx" function="e1y*B3vfinalz - e1z*B3vfinaly " priority="0" />
+    <Setter variable="B3e2tempy" function="e1z*B3vfinalx - e1x*B3vfinalz " priority="0" />
+    <Setter variable="B3e2tempz" function="e1x*B3vfinaly - e1y*B3vfinalx " priority="0" />
+    <Setter variable="B3e2mag" function="pow(pow(B3e2tempx,2)+pow(B3e2tempy,2)+pow(B3e2tempz,2),0.5) " priority="0" />
+    <Setter variable="B3e2x" function="B3e2tempx/B3e2mag" priority="0" />
+    <Setter variable="B3e2y" function="B3e2tempy/B3e2mag" priority="0" />
+    <Setter variable="B3e2z" function="B3e2tempz/B3e2mag" priority="0" />
+    <Setter variable="B3vintertempx" function="B3e2y*e1z-B3e2z*e1y" priority="0" />
+    <Setter variable="B3vintertempy" function="B3e2z*e1x-B3e2x*e1z" priority="0" />
+    <Setter variable="B3vintertempz" function="B3e2x*e1y-B3e2y*e1x" priority="0" />
+    <Setter variable="B3vintermag" function="pow(pow(B3vintertempx,2)+pow(B3vintertempy,2)+pow(B3vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="B3vinterx" function="B3vintertempx/B3vintermag" priority="0" />
+    <Setter variable="B3vintery" function="B3vintertempy/B3vintermag" priority="0" />
+    <Setter variable="B3vinterz" function="B3vintertempz/B3vintermag" priority="0" />
+    <Setter variable="B3thetatemp" function="acos(vrotx*B3vinterx + vroty*B3vintery + vrotz*B3vinterz)" priority="0" />
+    <Setter variable="B3phitemp" function="acos(B3vinterx*B3vfinalx + B3vintery*B3vfinaly + B3vinterz*B3vfinalz)" priority="0" />
+    <Setter variable="B3check1" function="e1x*(vroty*B3vinterz-vrotz*B3vintery) + e1y*(vrotz*B3vinterx-vrotx*B3vinterz) + e1z*(vrotx*B3vintery-vroty*B3vinterx)" priority="0" />
+    <Setter variable="B3check2" function="B3e2x*(B3vintery*B3vfinalz-B3vinterz*B3vfinaly) + B3e2y*(B3vinterz*B3vfinalx-B3vinterx*B3vfinalz) + B3e2z*(B3vinterx*B3vfinaly-B3vintery*B3vfinalx)" priority="0" />
+    <Setter variable="B3theta" function="B3thetatemp*(B3check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B3phi" function="B3phitemp*(B3check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B3i" function="B3theta/180" priority="0" />
+    <Setter variable="B3j" function="B3phi/90" priority="0" />
+
+    <Setter variable="B4Htarget" function="B4theta1" priority="0" />
+    <Setter variable="B4Ptarget" function="B4phi1" priority="0" />
+    <Setter variable="B4vfinalx" function="cos(B4Htarget)*cos(B4Ptarget)" priority="0" />
+    <Setter variable="B4vfinaly" function="sin(B4Htarget)*cos(B4Ptarget)" priority="0" />
+    <Setter variable="B4vfinalz" function="sin(B4Ptarget)" priority="0" />
+    <Setter variable="B4e2tempx" function="e1y*B4vfinalz - e1z*B4vfinaly " priority="0" />
+    <Setter variable="B4e2tempy" function="e1z*B4vfinalx - e1x*B4vfinalz " priority="0" />
+    <Setter variable="B4e2tempz" function="e1x*B4vfinaly - e1y*B4vfinalx " priority="0" />
+    <Setter variable="B4e2mag" function="pow(pow(B4e2tempx,2)+pow(B4e2tempy,2)+pow(B4e2tempz,2),0.5) " priority="0" />
+    <Setter variable="B4e2x" function="B4e2tempx/B4e2mag" priority="0" />
+    <Setter variable="B4e2y" function="B4e2tempy/B4e2mag" priority="0" />
+    <Setter variable="B4e2z" function="B4e2tempz/B4e2mag" priority="0" />
+    <Setter variable="B4vintertempx" function="B4e2y*e1z-B4e2z*e1y" priority="0" />
+    <Setter variable="B4vintertempy" function="B4e2z*e1x-B4e2x*e1z" priority="0" />
+    <Setter variable="B4vintertempz" function="B4e2x*e1y-B4e2y*e1x" priority="0" />
+    <Setter variable="B4vintermag" function="pow(pow(B4vintertempx,2)+pow(B4vintertempy,2)+pow(B4vintertempz,2), 0.5)" priority="0" />
+    <Setter variable="B4vinterx" function="B4vintertempx/B4vintermag" priority="0" />
+    <Setter variable="B4vintery" function="B4vintertempy/B4vintermag" priority="0" />
+    <Setter variable="B4vinterz" function="B4vintertempz/B4vintermag" priority="0" />
+    <Setter variable="B4thetatemp" function="acos(vrotx*B4vinterx + vroty*B4vintery + vrotz*B4vinterz)" priority="0" />
+    <Setter variable="B4phitemp" function="acos(B4vinterx*B4vfinalx + B4vintery*B4vfinaly + B4vinterz*B4vfinalz)" priority="0" />
+    <Setter variable="B4check1" function="e1x*(vroty*B4vinterz-vrotz*B4vintery) + e1y*(vrotz*B4vinterx-vrotx*B4vinterz) + e1z*(vrotx*B4vintery-vroty*B4vinterx)" priority="0" />
+    <Setter variable="B4check2" function="B4e2x*(B4vintery*B4vfinalz-B4vinterz*B4vfinaly) + B4e2y*(B4vinterz*B4vfinalx-B4vinterx*B4vfinalz) + B4e2z*(B4vinterx*B4vfinaly-B4vintery*B4vfinalx)" priority="0" />
+    <Setter variable="B4theta" function="B4thetatemp*(B4check1 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B4phi" function="B4phitemp*(B4check2 &lt; 0 ? -1 : 1)" priority="0" />
+    <Setter variable="B4i" function="B4theta/180" priority="0" />
+    <Setter variable="B4j" function="B4phi/90" priority="0" />

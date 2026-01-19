@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Aircraft name="Turret Test1" url="" theme="Default" paintOrigin="0,3.941644,-104.575" size="8.000002,10.32747,210" boundsOffset="0,5.086267,-101" boundsMin="-4.000001,1.75,-105" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.10.2">
+  <Variables>
+    <Setter variable="i1" function="smooth(VTOL,0.25)" priority="0" />
+  </Variables>
+  <Assembly>
+    <Parts>
+      <Part id="3" partType="FlightComputer-1" position="0,12,-101" rotation="0,0,0" drag="0.01760634,0.01760634,0,0,0,0" dragArea="0.01952007,0.01952007,0,0,0,0" materials="0,1,2,3" partCollisionResponse="Default">
+        <Cockpit.State primaryCockpit="True">
+          <Variables />
+        </Cockpit.State>
+      </Part>
+      <Part id="1" partType="JFuselage-1" position="0,2.25,-101" rotation="90,0,0" drag="0,7.953451,44.41223,67.29126,6.713293,6.713293" dragArea="0,8.051698,44.41223,67.29126,6.729126,6.729126" materials="0,0,0" massScale="0.99" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1" style="Body" glass="false" mass="2.333902E-09,3.324648E-08,0,12.82039" deadMassKg="500" buoyancy="0" fuelProportion="0">
+          <SectionA size="8,8" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="8,8" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="21" partType="JFuselage-1" position="0,2.25,101" rotation="90,0,0" drag="7.953451,0,67.29126,67.29126,6.713293,6.713293" dragArea="8.051698,0,67.29126,67.29126,6.729126,6.729126" materials="0,0,0" massScale="10000" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1" style="Body" glass="false" mass="2.333902E-09,3.324648E-08,0,12.82039" deadMassKg="500" buoyancy="0" fuelProportion="0">
+          <SectionA size="8,8" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="8,8" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="2" partType="JFuselage-1" position="0,2.875,-101" rotation="270,0,0" drag="0.7512557,0.7512557,0,0,0,0" dragArea="0.9760023,0.9760023,0,0,0,0" materials="0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,0.25" style="Body" glass="false" mass="-9.857752E-08,-6.196302E-08,0,0.6242985" deadMassKg="100" buoyancy="0" fuelProportion="0">
+          <SectionA size="4,4" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="4,4" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="5" partType="JointRotator-1" position="-0.3125059,6.078218,-101" rotation="-9.735219E-06,-1.188621E-05,89.99999" drag="0.06180082,0.06180083,0,0,0,0" dragArea="0.06506693,0.06506693,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="6" partType="JointRotator-1" position="-4.365911E-06,6.078224,-100.6875" rotation="90,-7.756349E-05,0" drag="0.01301338,0.01301338,0,0,0,0" dragArea="0.01301338,0.01301338,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="7" partType="JointRotator-1" position="0,7.890722,-101" rotation="0,0,0" drag="0.0665979,0.0665979,0,0,0,0" dragArea="0.07808029,0.07808029,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="clamp01(VTOL)" />
+        <JointRotator.State range="180" speed="1">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="8" partType="JFuselage-1" position="0,3.5,-101" rotation="270,0,0" drag="4.473402,3.894763,0,0,3.164009,3.164009" dragArea="4.473402,4.473402,0,0,3.364563,3.364563" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1" style="Body" glass="false" mass="0,0.3300551,0,3.968481" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.12,0.1" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.12,0.1" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="9" partType="JFuselage-1" position="0,4.750048,-101" rotation="270,0,0" drag="1.021057,0,0.3984698,0,2.69165,0" dragArea="1.263933,0,0.6729126,0,2.69165,0" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1.5" style="Body" glass="false" mass="-1.7875,-2.094896,-0.1858308,0.278025" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.75,0.12,0.1" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.75,0.32,0.1" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="10" partType="JFuselage-1" position="0,5.550043,-101" rotation="270,0,0" drag="0.01232445,0,0.6623572,0,0,0" dragArea="0.06832027,0,0.6729126,0,0,0" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,0.1" style="Body" glass="false" mass="-1.7875,-1.260231,-0.02413293,0.004757504" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.75,0.32,0.1" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.75,0.42,0.1" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="11" partType="JFuselage-1" position="9.536743E-07,4.750048,-101" rotation="270,0,0" drag="1.021057,0,0.3984698,0,0,2.69165" dragArea="1.263933,0,0.6729126,0,0,2.69165" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1.5" style="Body" glass="false" mass="1.7875,-2.094896,-0.1858309,0.278025" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.1,0.12,0.75" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.1,0.32,0.75" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="12" partType="JFuselage-1" position="9.536743E-07,5.550043,-101" rotation="270,0,0" drag="0.01232445,0,0.6623572,0,0,0" dragArea="0.06832027,0,0.6729126,0,0,0" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,0.1" style="Body" glass="false" mass="1.7875,-1.260231,-0.02413294,0.004757501" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.1,0.32,0.75" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.1,0.42,0.75" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="13" partType="SmallRotator-1" position="1.885778,4.750048,-100.4158" rotation="0,270,0" drag="0,0,0,0,0,0" dragArea="0,0,0,0,0,0" materials="0,3,10" massScale="0.0025" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Trim" />
+        <JointRotator.State range="90" speed="0.5">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="14" partType="JFuselage-1" position="0,4.750048,-100.4158" rotation="0,90,0" drag="0.438411,0,1.319437,0,0,0" dragArea="0.5856014,0,1.345825,0,0,0" materials="2,0,0,0,0" massScale="0.0025" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,3.5" style="Body" glass="false" mass="-2.321486E-08,-1.155085E-08,0,0.5544842" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="1,1" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,-0.025," />
+          <SectionB size="1,1" cornerRadii="1,1,1,1" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="True" cutting=",,-0.025," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="15" partType="Cannon-1" position="-1.21875,4.750048,-98.84375" rotation="0,0,0" drag="0.02953527,0,3.30123,0.6597183,0,0" dragArea="0.03253345,0,3.364563,0.6729126,0,0" materials="2,4,4,5,-3" massScale="0.0025" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="0" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="100" firingDelay="1" diameter="0.3" baseLength="2.2" barrelLength="2.2" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="false" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+      <Part id="16" partType="Cannon-1" position="1.218751,4.750048,-98.84375" rotation="0,0,0" drag="0.02953527,0,3.30123,0.6597183,0,0" dragArea="0.03253345,0,3.364563,0.6729126,0,0" materials="2,4,4,5,-3" massScale="0.0025" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="0" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="100" firingDelay="1" diameter="0.3" baseLength="2.2" barrelLength="2.2" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="false" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+      <Part id="17" partType="JFuselage-1" position="1.907349E-06,4.800046,-101" rotation="270,0,0" drag="0.3643743,6.075789,0,0,3.636367,3.636367" dragArea="0.3643743,6.978199,0,0,4.037476,4.037476" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1.6" style="Body" glass="false" mass="-1.897345E-10,1.987446,0,4.02109" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.42,0.1" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.42,0.1" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="18" partType="JFuselage-1" position="0,5.750042,-101" rotation="270,0,0" drag="0.2582242,1.246325,10.63994,0,1.818183,1.818183" dragArea="1.431486,1.431486,10.7666,0,2.018738,2.018738" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,0.3" style="Body" glass="false" mass="-1.168371E-10,2.65389,-0.03056445,0.5356593" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.42,0.1" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",0.1,0.72,0.1" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="19" partType="JFuselage-1" position="0,4.750048,-101" rotation="270,0,0" drag="2.528313,0,0.7969397,0,0,0" dragArea="3.129792,0,1.345825,0,0,0" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1.5" style="Body" glass="false" mass="2.968214E-08,-2.102394,-0.1858188,0.69927" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.31,0.12,0.31" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.31,0.32,0.31" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="20" partType="JFuselage-1" position="0,5.550043,-101" rotation="270,0,0" drag="0.03051768,0,1.324714,0,0,0" dragArea="0.1691738,0,1.345825,0,0,0" materials="0,0,0,0,0" disableAircraftCollisions="true" massScale="1E-05" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,0.1" style="Body" glass="false" mass="2.899955E-08,-1.264558,-0.02412683,0.01196801" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.31,0.32,0.31" />
+          <SectionB size="5.5,5.5" cornerRadii="1,1,0,0" cornerStretch="True,True,True,True" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting="0.58,0.31,0.42,0.31" />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="23" partType="JointRotator-1" position="-0.3125,6.662954,-101" rotation="-9.73518E-06,-1.188625E-05,89.99999" drag="0.05815198,0.05815198,0,0,0,0" dragArea="0.05856024,0.05856024,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="24" partType="JointRotator-1" position="-4.351139E-06,6.66296,-100.6875" rotation="90,-7.756349E-05,0" drag="0.01101034,0.0111762,0,0,0,0" dragArea="0.01626673,0.01626673,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="4" partType="JointRotator-1" position="0,7.010201,-100.6875" rotation="90,-7.756349E-05,0" drag="0.01115068,0.01300701,0,0,0,0" dragArea="0.01301338,0.01301338,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="22" partType="JointRotator-1" position="-0.3125,7.010201,-101" rotation="-9.735176E-06,-1.188625E-05,89.99999" drag="0.06372094,0.06372095,0,0,0,0" dragArea="0.06506693,0.06506693,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="25" partType="JointRotator-1" position="0,7.439888,-100.6875" rotation="90,-7.756349E-05,0" drag="0.0113293,0.01245202,0,0,0,0" dragArea="0.01301338,0.01301338,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="0" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+      <Part id="26" partType="JointRotator-1" position="-0.3125,7.439888,-101" rotation="-9.587156E-06,-1.456121E-05,89.99998" drag="0.05241075,0.05241075,0,0,0,0" dragArea="0.05856024,0.05856024,0,0,0,0" materials="0,3,10" scale="0.25,1,0.25" massScale="0.5" symmetryDisabled="true" partCollisionResponse="Default">
+        <InputController.State activationGroup="0" invert="false" min="-1" max="1" input="Disabled" />
+        <JointRotator.State range="5" speed="0.05">
+          <Variables />
+        </JointRotator.State>
+      </Part>
+    </Parts>
+    <Connections>
+      <Connection partA="1" partB="3" attachPointsA="2" attachPointsB="0" />
+      <Connection partA="21" partB="1" attachPointsA="4" attachPointsB="6" />
+      <Connection partA="1" partB="2" attachPointsA="0" attachPointsB="0" />
+      <Connection partA="5" partB="2" attachPointsA="0" attachPointsB="5" />
+      <Connection partA="6" partB="2" attachPointsA="0" attachPointsB="4" />
+      <Connection partA="6" partB="5" attachPointsA="3" attachPointsB="3" />
+      <Connection partA="23" partB="5" attachPointsA="0" attachPointsB="4" />
+      <Connection partA="24" partB="6" attachPointsA="0" attachPointsB="2" />
+      <Connection partA="7" partB="8" attachPointsA="0" attachPointsB="0" />
+      <Connection partA="25" partB="7" attachPointsA="2" attachPointsB="3" />
+      <Connection partA="8" partB="9" attachPointsA="5" attachPointsB="0" />
+      <Connection partA="8" partB="11" attachPointsA="3" attachPointsB="0" />
+      <Connection partA="8" partB="17" attachPointsA="2" attachPointsB="2" />
+      <Connection partA="8" partB="19" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="9" partB="10" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="11" partB="12" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="11" partB="13" attachPointsA="3" attachPointsB="1" />
+      <Connection partA="13" partB="14" attachPointsA="0" attachPointsB="1" />
+      <Connection partA="14" partB="15" attachPointsA="5" attachPointsB="0" />
+      <Connection partA="14" partB="16" attachPointsA="5" attachPointsB="0" />
+      <Connection partA="18" partB="17" attachPointsA="0" attachPointsB="1" />
+      <Connection partA="19" partB="20" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="24" partB="23" attachPointsA="3" attachPointsB="3" />
+      <Connection partA="22" partB="23" attachPointsA="0" attachPointsB="4" />
+      <Connection partA="4" partB="24" attachPointsA="0" attachPointsB="2" />
+      <Connection partA="4" partB="22" attachPointsA="3" attachPointsB="3" />
+      <Connection partA="25" partB="4" attachPointsA="0" attachPointsB="2" />
+      <Connection partA="26" partB="22" attachPointsA="0" attachPointsB="4" />
+      <Connection partA="26" partB="25" attachPointsA="3" attachPointsB="3" />
+    </Connections>
+    <Bodies>
+      <Body partIds="3,1,21,2" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="5,6" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="7,25,26" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="8,9,10,11,12,13,17,18,19,20" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="14,15,16" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="23,24" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="4,22" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+    </Bodies>
+  </Assembly>
+  <Theme name="Custom">
+    <Material style="SolidColor" color="000000FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="000000FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="D0D0D0FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="E9E9E9FF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="000000FF" s="0.83" m="0.5" e="0" />
+    <Material style="SolidColor" color="001F7FFF" s="0.83" m="0.5" e="0" />
+    <Material style="SolidColor" color="AA2A00FF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="3F3F3FFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="5C0000FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FFF0F0FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF0F0FFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="AAAAAAFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="3F3F3FFF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="ABABABFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="446677FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF1143FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF6A12FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="0080FFFF" s="1" m="0.54" e="0" />
+    <Material style="SolidColor" color="74B9FFFF" s="0" m="0" e="0" />
+    <Material style="SolidColor" color="232323FF" s="0.5" m="0.5" e="0" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0" m="0" e="1" />
+    <Material style="SolidColor" color="171717FF" s="0.7" m="0.5" e="0" />
+  </Theme>
+</Aircraft>
