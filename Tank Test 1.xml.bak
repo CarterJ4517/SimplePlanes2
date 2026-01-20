@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Aircraft name="Tank Test" url="8Dn0SF" theme="Custom" aerodynamicsModel="Legacy" paintOrigin="0,2.5,0" size="2.625196,1.965324,8.646723" boundsOffset="-1.734728E-07,-0.5697429,-1.105716" boundsMin="-1.312598,1.602723,-4.182796" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
+<Aircraft name="Tank Test 1" url="8Dn0SF" theme="Custom" aerodynamicsModel="Legacy" paintOrigin="0,2.5,0" size="2.625196,1.965324,8.646723" boundsOffset="-1.734728E-07,-0.5697429,-1.105716" boundsMin="-1.312598,1.602723,-4.182796" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.10.2">
   <Variables>
     <Setter variable="H" function="Heading" priority="0" />
     <Setter variable="P" function="PitchAngle" priority="0" />
@@ -44,10 +44,10 @@
     <Setter variable="cycle" function="(smooth(counter,2)+0.999)%1" priority="0" />
     <Setter variable="i1" function="VTOL" priority="1" activator="Activate1" />
     <Setter variable="j1" function="Trim" priority="1" activator="Activate1" />
-    <Setter variable="vxtr" function="0" priority="0" />
-    <Setter variable="vytr" function="0" priority="0" />
-    <Setter variable="vztr" function="0" priority="0" />
-    <Setter variable="vdtr" function="rate(TargetDistance*cos(TargetElevation))" priority="0" />
+    <Setter variable="vxtr" function="-rate(Longitude)" priority="0" />
+    <Setter variable="vytr" function="-rate(Latitude)" priority="0" />
+    <Setter variable="vztr" function="-rate(Altitude)" priority="0" />
+    <Setter variable="vdtr" function="-pow(pow(vxtr,2)+pow(vytr,2),0.5)" priority="0" />
     <Setter variable="g" function="-9.81" priority="0" />
     <Setter variable="dt" function="TargetDistance*cos(TargetElevation)" priority="0" />
     <Setter variable="zt" function="TargetDistance*sin(TargetElevation)" priority="0" />
@@ -70,8 +70,8 @@
     <Setter variable="t1" function="dt/(vd - vdtr)" priority="0" />
     <Setter variable="t2" function="(-vz+vztr+checkee*sqrt(pow(vz-vztr,2)+2*(g)*(zt)))/g" priority="0" />
     <Setter variable="tavg" function="t2" priority="0" />
-    <Setter variable="xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading)" priority="0" />
-    <Setter variable="yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading)" priority="0" />
+    <Setter variable="xexp" function="TargetDistance*cos(TargetElevation)*sin(TargetHeading) + vxtr*tavg" priority="0" />
+    <Setter variable="yexp" function="TargetDistance*cos(TargetElevation)*cos(TargetHeading) + vytr*tavg" priority="0" />
     <Setter variable="theta1" function="atan2(xexp,yexp)" priority="0" />
     <Setter variable="checkee" function="TargetElevation &gt; 0 ? 1 : -1" priority="0" />
     <Setter variable="fuse" function="Activate7 ? tavg : 10000000" priority="0" />
@@ -312,7 +312,7 @@
       </Part>
       <Part id="220" partType="Cannon-1" position="2.139574E-07,3.191135,3.013448" rotation="0,0,180" drag="0.1135,0.1135,0.5268261,0.5268261,0.6344449,0.6344458" dragArea="0,0,0,0,0,0" materials="2,4,2,2,-3" disableAircraftCollisions="true" symmetryDisabled="true" partCollisionResponse="Default">
         <Cannon.State activationGroup="0" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="1000" firingDelay="1" diameter="0.3" baseLength="2" barrelLength="1.2" barrelRecoil="0" recoilForce="0" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="true" flashScale="1" flashSpace="Local" projectileLifetime="1E+18" launchVolume="1" explosionScalar="1" impactDamageScalar="1" function="MultiRole" fuseInput="TargetSelected ? fuse : 100000" />
-        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+        <CameraVantage.State viewMode="Orbit" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
           <Variables />
         </CameraVantage.State>
       </Part>

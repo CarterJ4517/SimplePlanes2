@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Aircraft name="multicannon test" url="" theme="Default" paintOrigin="0,3.941644,-3.919277" size="9.622683,3.247614,6.526438" boundsOffset="0.3113389,-0.623807,-0.3442769" boundsMin="-5.12268,1.75,-3.263219" xmlVersion="22" legacyJointIdentification="false" clientVersion="0.5.7.1">
+  <Variables>
+    <Setter variable="counter" function="counter + clamp01(abs(rate(ammo(&quot;Cannon&quot;))))" priority="0" />
+    <Setter variable="cycle" function="(smooth(counter,2)+0.999)%1" priority="0" />
+  </Variables>
+  <Assembly>
+    <Parts>
+      <Part id="3" partType="FlightComputer-1" position="0,2.75,-0.3442769" rotation="0,0,0" drag="0,0,0.01919886,0,0.01774365,0.01774365" dragArea="0,0,0.02119355,0,0.01884992,0.01884992" materials="0,1,2,3" partCollisionResponse="Default">
+        <Cockpit.State primaryCockpit="True">
+          <Variables />
+        </Cockpit.State>
+      </Part>
+      <Part id="1" partType="JFuselage-1" position="0,2.25,-0.3442769" rotation="0,0,0" drag="2.890761,2.890761,10.9299,14.43641,0,0" dragArea="2.890761,2.890761,11.52882,15.03533,0,0" materials="0,0,0" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,5" style="Body" glass="false" mass="1.11717E-08,-6.475104E-08,0,2.981946" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="2" partType="Cannon-1" position="3.524226E-07,4.60534,-1.759613" rotation="355,-2.243008E-07,5.137315E-06" drag="0.02109936,0.04125679,0.721193,0.05909259,0,0" dragArea="0.1144452,0.1144452,0.9466518,0.07770968,0,0" materials="2,4,4,5,-3" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="counter%3 = 0" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="10" firingDelay="0.2" diameter="0.3" baseLength="2.5" barrelLength="2.5" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="true" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+      <Part id="4" partType="Cannon-1" position="0.9375015,4.60534,-1.759611" rotation="355,-2.243008E-07,5.137315E-06" drag="0.01850626,0.04170003,0.7073752,0.05923113,0,0.6929023" dragArea="0.1158581,0.1158581,0.9763233,0.09325165,0,0.9002386" materials="2,4,4,5,-3" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="counter%3 = 2" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="10" firingDelay="0.2" diameter="0.3" baseLength="2.5" barrelLength="2.5" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="true" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+      <Part id="5" partType="Cannon-1" position="-0.9375013,4.60534,-1.759613" rotation="355,-2.243008E-07,5.137315E-06" drag="0.019897,0.0407637,0.7277097,0.05931425,0.6929073,0" dragArea="0.1144452,0.1144452,0.9466518,0.07770968,0.9002386,0" materials="2,4,4,5,-3" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="counter%3 = 1" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="10" firingDelay="0.2" diameter="0.3" baseLength="2.5" barrelLength="2.5" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="true" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+      <Part id="6" partType="JFuselage-1" position="3.000002,2.25,-0.3442767" rotation="0,0,0" drag="2.893587,2.893587,14.45502,14.45502,0,4.457603" dragArea="2.893587,2.893587,15.03533,15.03533,0,4.993684" materials="0,0,0" symmetryId="14" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,5" style="Body" glass="false" mass="1.11717E-08,-6.475104E-08,0,2.981946" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="10" partType="JFuselage-1" position="-3.000002,2.25,-0.3442771" rotation="0,0,0" drag="2.868155,2.868155,14.42148,14.42148,4.457603,0" dragArea="2.868155,2.868155,14.84735,14.84735,4.993684,0" materials="0,0,0" symmetryId="14" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,5" style="Body" glass="false" mass="1.11717E-08,-6.475104E-08,0,2.981946" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="3,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="14" partType="JFuselage-1" position="0,3.25,-1.219277" rotation="-2.134434E-07,90,355" drag="0.7919258,0.8989588,0.7322396,0,0.7377415,0.9418379" dragArea="0.8943735,1.030013,0.8392693,0,0.7377415,0.9418379" materials="0,0,0" symmetryDisabled="true" partCollisionResponse="Default">
+        <JFuselage.State version="2" offset="0,0,1" style="Body" glass="false" mass="-9.265341E-09,-1.374795E-09,0,0.1923892" deadMassKg="0" buoyancy="0" fuelProportion="0">
+          <SectionA size="1,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+          <SectionB size="1,1" cornerRadii="0.25,0.25,0.25,0.25" cornerStretch="False,False,False,False" cornerSamples="7,7,7,7" trapezium="0" edgeCurvature="0,0,0,0" edgeSamples="7,7,7,7" smoothing="False" cutting=",,," />
+        </JFuselage.State>
+        <Transparency.State opacity="0.1" hideFront="false" hideBack="false" overrideHide="false" />
+        <FuelTank.State fuel="0" capacity="0" />
+      </Part>
+      <Part id="15" partType="Targeting-Pod-Lite" position="0,2.75,1.155723" rotation="270,0,0" drag="0.09004349,0,0.01096524,0,0.09246016,0.09256466" dragArea="0.1356388,0,0.02401936,0,0.1215493,0.1215493" materials="0,1,3" symmetryDisabled="true" partCollisionResponse="Default">
+        <CameraVantage.State viewMode="TargetingPod" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false" name="Targeting Pod" upOffset="0">
+          <Variables />
+        </CameraVantage.State>
+        <TargetingPod.State activationGroup="0" />
+      </Part>
+      <Part id="16" partType="Cannon-1" position="-5,3.447757,-0.228783" rotation="355,0,5.356468E-06" drag="0.02205237,0.04097976,0.717363,0.7187488,0.6923159,0.534973" dragArea="0.117271,0.117271,0.942413,0.942413,0.9008886,0.6967922" materials="2,4,4,5,-3" symmetryDisabled="true" partCollisionResponse="Default">
+        <Cannon.State activationGroup="0" projectileStyle="Slug" projectileType="Explosive" projectileVelocity="800" ammoCount="10" firingDelay="0.2" diameter="0.3" baseLength="2.5" barrelLength="2.5" barrelRecoil="1" recoilForce="1" tracerSpacing="-1" tracerLength="0.1" tracerColor="FF0000FF" muzzleBrake="true" flashScale="1" flashSpace="Local" projectileLifetime="3.40282347E+38" launchVolume="1" explosionScalar="1" impactDamageScalar="1" />
+        <CameraVantage.State viewMode="None" autoOrient="true" lookAtCockpit="false" autoZoomOnCockpit="false" autoCenterCamera="false">
+          <Variables />
+        </CameraVantage.State>
+      </Part>
+    </Parts>
+    <Connections>
+      <Connection partA="1" partB="3" attachPointsA="2" attachPointsB="0" />
+      <Connection partA="6" partB="1" attachPointsA="5" attachPointsB="3" />
+      <Connection partA="10" partB="1" attachPointsA="3" attachPointsB="5" />
+      <Connection partA="14" partB="1" attachPointsA="4" attachPointsB="6" />
+      <Connection partA="15" partB="1" attachPointsA="0" attachPointsB="6" />
+      <Connection partA="14" partB="2" attachPointsA="3" attachPointsB="0" />
+      <Connection partA="14" partB="4" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="14" partB="5" attachPointsA="0" attachPointsB="0" />
+      <Connection partA="14" partB="16" attachPointsA="5" attachPointsB="0" />
+    </Connections>
+    <Bodies>
+      <Body partIds="3,1,6,10,14,2,4,5,16" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+      <Body partIds="15" position="0,0,0" rotation="0,0,0" velocity="0,0,0" angularVelocity="0,0,0" />
+    </Bodies>
+  </Assembly>
+  <Theme name="Custom">
+    <Material style="SolidColor" color="000000FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="000000FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="D0D0D0FF" s="0.08" m="0.65" e="0" hidden="true" />
+    <Material style="SolidColor" color="E9E9E9FF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="000000FF" s="0.83" m="0.5" e="0" />
+    <Material style="SolidColor" color="001F7FFF" s="0.83" m="0.5" e="0" />
+    <Material style="SolidColor" color="AA2A00FF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="3F3F3FFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="5C0000FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FFF0F0FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF0F0FFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="AAAAAAFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="3F3F3FFF" s="0.7" m="0.5" e="0" />
+    <Material style="SolidColor" color="ABABABFF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="446677FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF1143FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="FF6A12FF" s="0.08" m="0.65" e="0" />
+    <Material style="SolidColor" color="0080FFFF" s="1" m="0.54" e="0" />
+    <Material style="SolidColor" color="74B9FFFF" s="0" m="0" e="0" />
+    <Material style="SolidColor" color="232323FF" s="0.5" m="0.5" e="0" />
+    <Material style="SolidColor" color="FFFFFFFF" s="0" m="0" e="1" />
+    <Material style="SolidColor" color="171717FF" s="0.7" m="0.5" e="0" />
+  </Theme>
+</Aircraft>
